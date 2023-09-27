@@ -1,1 +1,1 @@
-
+write-host "Welcome"
