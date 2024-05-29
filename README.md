@@ -1,2 +1,3 @@
-# intune
-PowerShell scripts related to Microsoft Intune public implementation
+# Intune
+PowerShell scripts related to Microsoft Intune
+Scripts related to remediation, detection, installation, configuration
