@@ -87,7 +87,7 @@ Write-Host "Computer Environment variables had been updated"
 #
 #
 ##############################################
-# Download PDF Desktop
+# Download Desktop PDF files
 ##############################################
 #
 #
@@ -179,41 +179,6 @@ reg.exe unload "HKLM\User0" | Out-Null
 #
 #
 #
-################################################
-# Registry - Current User profile Configuration
-################################################
-<#
-#
-#
-# Get the current user
-$UserSID = [System.Security.Principal.WindowsIdentity]::GetCurrent().user.Value
-Write-Host "$UserSID is runing currently logged"
-#
-# you can use PSDrive to load HKU but
-New-PSDrive -Name HKU -PSProvider Registry -Confirm:$false -Root HKEY_USERS | Out-Null
-#
-# Enable Num Lock
-New-ItemProperty "Registry::HKU\$UserSID\Control Panel\Keyboard" -Name "InitialKeyboardIndicators" -PropertyType String -Value "2" -Force -ErrorAction Continue | Out-Null
-#
-# SearchBox taskbar for logged user
-New-ItemProperty "Registry::HKU\$UserSID\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "SearchBoxTaskbarMode" -PropertyType DWORD -Value 1 -Force -ErrorAction Continue | Out-Null
-New-ItemProperty "Registry::HKU\$UserSID\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "SearchBoxTaskbarModePrevious" -PropertyType DWORD -Value 1 -Force -ErrorAction Continue | Out-Null
-New-ItemProperty "Registry::HKU\$UserSID\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "TraySearchBoxVisible" -PropertyType DWORD -Value 0 -Force -ErrorAction Continue | Out-Null
-New-ItemProperty "Registry::HKU\$UserSID\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "TraySearchBoxVisibleOnAnyMonitor" -PropertyType DWORD -Value 0 -Force -ErrorAction Continue | Out-Null
-New-ItemProperty "Registry::HKU\$UserSID\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "OnboardSearchboxOnTaskbar" -PropertyType DWORD -Value 2 -Force -ErrorAction Continue | Out-Null
-# 
-# Enable show file extension per the current user 
-New-ItemProperty "Registry::HKU\$UserSID\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -PropertyType DWORD -Value "0" -Force | Out-Null
-#
-# Add Numlock on logon
-# https://winaero.com/enable-numlock-logon-screen-windows-10/#Enable_NumLock_on_Login_Screen
-New-ItemProperty "Registry::HKU\.DEFAULT\Control Panel\Keyboard" -Name "InitialKeyboardIndicators" -PropertyType String -Value "2147483650" -Force -ErrorAction Continue | Out-Null
-#
-#
-# Remove the HKU PSDrive
-Remove-PSDrive -Name HKU -Force -Confirm:$false
-#
-#>
 ##############################################
 # Windows Bloatware removal
 ##############################################
@@ -255,7 +220,6 @@ foreach ($Appx in $AppsRemovable) {
 }
 #
 #
-$LASTEXITCODE
 #
 Write-Host "`nAutopilot onboarding is completed."
 #
