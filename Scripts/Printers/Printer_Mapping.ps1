@@ -46,7 +46,7 @@ Function CleanUpAndExit() {
 
 function Test-DCConnection
 {
-    $DCConnection = Test-Connection $LocalDomain -Count 1 -ErrorAction SilentlyContinue
+    $DCConnection = Test-Connection $LocalDomain -Count 2 -ErrorAction SilentlyContinue
         return ($null -ne $DCConnection)
 	}
 
