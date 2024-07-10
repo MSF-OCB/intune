@@ -1,0 +1,16 @@
+Microsoft.Xbox.TCUI
+Microsoft.XboxApp
+Microsoft.XboxGameOverlay
+Microsoft.XboxGamingOverlay
+Microsoft.XboxIdentityProvider
+Microsoft.XboxSpeechToTextOverlay
+Microsoft.GetHelp
+Microsoft.Office.OneNote
+Microsoft.windowscommunicationsapps
+Microsoft.WindowsFeedbackHub
+Microsoft.SkypeApp
+Microsoft.People
+Microsoft.MixedReality.Portal
+Microsoft.MicrosoftSolitaireCollection
+Microsoft.Getstarted
+Microsoft.BingWeather
