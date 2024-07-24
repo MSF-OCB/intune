@@ -1,4 +1,5 @@
 Microsoft.Xbox.TCUI
+MicrosoftCorporationII.QuickAssist
 Microsoft.XboxApp
 Microsoft.XboxGameOverlay
 Microsoft.XboxGamingOverlay
