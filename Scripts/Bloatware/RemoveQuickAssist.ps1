@@ -1,6 +1,6 @@
 # Use windows capabilities to remove older QuickAssist
 $WinVer = (Get-CimInstance Win32_OperatingSystem).version
-If ($WinVer -lt 10.0.2){
+If ($WinVer -lt "10.0.2"){
       $QuickAssistStat = Get-WindowsCapability -online -Name *QuickAssist*
       If ($QuickAssistStat.State -eq 'Installed') {
               Remove-WindowsCapability -Online -Name $QuickAssistStat.name -ErrorAction Continue
