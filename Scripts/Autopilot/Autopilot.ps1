@@ -16,7 +16,7 @@
 #
 if (($env:computername -ilike "OCB-*") -or ($env:computername -ilike "OCBL*")) {
     Write-Host "`n$env:computername meets OCB naming convention, proceeding...`n" -Foreground Green -BackgroundColor Black
-    if (Test-Connection 1.1.1.1 -Quiet){
+    if (Test-Connection 1.1.1.1 -Quiet -ErrorAction SilentlyContinue){
         Write-Host "Computer can access internet. `n" -Foreground Green -BackgroundColor Black
         # Define Group TAG & Name
         $GroupTag = "OCB-APPP"
