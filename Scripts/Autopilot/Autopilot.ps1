@@ -48,8 +48,8 @@ else {
             [ValidatePattern("^[A-Z0-9]{1,12}$", Options = 'None')]$DeviceNameInput = Read-Host "Enter computer asset (without OCBL)"
             Write-Host "Name meets OCB requirements = OCBL$DeviceNameInput" -ForegroundColor Green -BackgroundColor Black
             Read-Host -Prompt "`nWARNING - WARNING - WARNING`n`nComputer will RESTART after you press any key"
-            Rename-Computer -NewName "OCBL$DeviceNameInput" -Force -Confirm:$false -Restart
-            Write-Host "Proceeding with onboarding Intune Autopilot device `n" -ForegroundColor Cyan -BackgroundColor Black
+            Rename-Computer -NewName "OCBL$DeviceNameInput" -Force -Confirm:$false -PassThru -Restart
+            # Write-Host "Proceeding with onboarding Intune Autopilot device `n" -ForegroundColor Cyan -BackgroundColor Black
         }
         catch {}
     } 
