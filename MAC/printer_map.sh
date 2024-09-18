@@ -67,11 +67,11 @@ then
 
     # Check if the Color printer is already installed
     if lpstat -p | grep -q "$PRINTER_Color"; then
-        echo "Printer $PRINTER_Color is already installed."
+        echo "# $(date) | Printer $PRINTER_Color is already installed."
     else
         # Install the printer using the SSO credentials
         lpadmin -p "$PRINTER_Color" -E -v "$PROTOCOL//$PRINTSERVER/$PRINTER_Color" -P "/Library/Printers/PPDs/Contents/Resources/RICOH MP 4055" -o auth-info-required=negotiate
-        echo "Printer $PRINTER_Color has been installed."
+        echo "# $(date) | Printer $PRINTER_Color has been installed."
     fi
 else
     echo "Server is not reachable. Exiting."
