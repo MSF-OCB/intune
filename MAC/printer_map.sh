@@ -42,29 +42,28 @@ startLog
 
 echo ""
 echo "############################################################"
-echo "# $(date) | Logging Mapping Printers to [$log]"
+echo "# $(date) | Logging Updating lockscreen to [$log]"
 echo "############################################################"
 echo ""
 
 # Check if the server is reachable
 if ping -c 1 "$PRINTSERVER" &> /dev/null
 then
-    echo "Server is reachable. Proceeding with printer mapping."
+    echo "# $(date) | Server is reachable. Proceeding with printer mapping."
 
     # Get the current user's Kerberos ticket
     USER_TICKET=$(klist | grep "Default principal" | awk '{print $3}')
 
     # Check if the BW printer is already installed
     if lpstat -p | grep -q "$PRINTER_BW"; then
-        echo "Printer $PRINTER_BW is already installed."
+        echo "# $(date) | Printer $PRINTER_BW is already installed."
     else
         # Install the printer using the SSO credentials
         lpadmin -p "$PRINTER_BW" -E -v "$PROTOCOL//$PRINTSERVER/$PRINTER_BW" -P "/Library/Printers/PPDs/Contents/Resources/RICOH MP 4055" -o auth-info-required=negotiate
-        echo "Printer $PRINTER_BW has been installed."
+        echo "# $(date) | Printer $PRINTER_BW has been installed."
+        # Set the printer as the default printer
+        lpoptions -d "$PRINTER_BW"
     fi
-
-    # Set the printer as the default printer
-    lpoptions -d "$PRINTER_BW"
 
     # Check if the Color printer is already installed
     if lpstat -p | grep -q "$PRINTER_Color"; then
