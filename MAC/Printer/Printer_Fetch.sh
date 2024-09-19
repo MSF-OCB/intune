@@ -20,8 +20,8 @@ function startLog() {
     ##
     ##  start logging - Output to log file and STDOUT
     ##
-    ####################
-    ####################
+    ###################################################
+    ###################################################
 
     if [[ ! -d "$logdir" ]]; then
         ## Creating Metadirectory
@@ -43,19 +43,19 @@ echo "##########################################################################
 echo ""
 
 # URL of the printer mapping tool
-printmap="https://raw.githubusercontent.com/MSF-OCB/intune/main/MAC/printer_map.sh"
+printmap="https://raw.githubusercontent.com/MSF-OCB/intune/main/MAC/Printer/Printer_Map.sh"
 # Destination directory printer mapping tool
 mkdir -p "/Library/MSF/Printer"
 # Download printer mapping tool
 curl -o "/Library/MSF/printermap.sh" $printmap
+echo "$(date) | File downloaded to /Library/MSF/Printer"
 # Make the printer mapping script executable
 chmod +x "/Library/MSF/printermap.sh"
 
 # URL of the print Launch Agent
-printlunch="https://raw.githubusercontent.com/MSF-OCB/intune/main/MAC/printer_map.sh"
+printlunch="https://raw.githubusercontent.com/MSF-OCB/intune/main/MAC/Printer/Printer_LunchAgent.plist"
 # Download printer Launch Agent
 curl -o "/Library/LaunchAgents/com.msfocb.printermap.plist" $printlunch
-
-echo "$(date) | File downloaded to /Library/MSF/Printer"
+echo "$(date) | PrintMap added to: Library/LaunchAgents"
 
 launchctl load "/Library/LaunchAgents/com.msfocb.printermap.plist"
