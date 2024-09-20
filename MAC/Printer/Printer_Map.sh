@@ -77,4 +77,3 @@ then
 else
     echo "Server is not reachable. Exiting."
 fi
-exit 0
