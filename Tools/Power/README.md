@@ -10,9 +10,9 @@ Omar Assaf
 
 [@X](https://x.com/omar_assaf)
 
-[Email](omar_assaf@hotmail.ca)
+[Email](mailto:omar_assaf@hotmail.ca)
 
-[cyberack.tech](cyberack.tech)
+[cyberack.tech](https://cyberack.tech)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
