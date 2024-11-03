@@ -18,4 +18,4 @@ Omar Assaf
 
 ## Reference
 
-[[https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider](https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider)]
+[https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider](https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/customize-power-slider)
