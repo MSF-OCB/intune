@@ -6,8 +6,14 @@ This provisioning package will set the default power slider for the "Balanced" p
 <!-- CONTACT -->
 ## Contact
 
-Omar Assaf - [@X](https://x.com/omar_assaf)
-mailto:omar_assaf@hotmail.ca
+Omar Assaf
+
+[@X](https://x.com/omar_assaf)
+
+[Email](omar_assaf@hotmail.ca)
+
+[cyberack.tech](cyberack.tech)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Reference
