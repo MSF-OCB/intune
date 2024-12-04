@@ -1,4 +1,15 @@
-
+#
+#^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**
+# Author: Omar Assaf
+# X: omar_assaf
+#
+#^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**
+# Please credit the author if you use this script
+#^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**
+#
+# This script will upload Hardware Hash for Autopilot devices
+# You will be requested to sign in with you Admin Account
+#
 
 function FunPreReqInstall {
     # Check if NuGet is installed, if not install it silently
@@ -162,7 +173,8 @@ function FunDeviceHashExtract {
         $deviceDetails = Get-CimInstance -CimSession $session -Namespace $namespace -ClassName $class -Filter $filter -ErrorAction Stop
     }
     catch {
-        Write-Host ">> An error occurred while querying CIM instance: $_" -ForegroundColor Red
+        Write-Host ">> Error: Hardware Hash is not available. Exiting..." -ForegroundColor Red
+        Write-Host ">> Cannot continue: $_" -ForegroundColor Red
         exit 1
     }
 
@@ -385,8 +397,8 @@ FunDisplayTxtBox -Text @(
 
 # $UserHashChoise = FunGet-HashChoice
 $DeviceOfficeLoc = FunGet-DeviceLocation
-$DeviceGeneratedName = "$(FunGenerateDeviceName)"
 $DeviceHardwareHash = "$(FunDeviceHashExtract)"
+$DeviceGeneratedName = "$(FunGenerateDeviceName)"
 
 FunPreReqInstall
 FunConnectGraphforAuth
