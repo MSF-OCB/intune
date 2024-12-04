@@ -5,15 +5,15 @@
 ping -n 2 -w 700 1.1.1.1 | find "TTL=" > NUL
 IF %ERRORLEVEL% EQU 0 (
     :: Check if folder C:\Windows\MSF exists, create if not
-    IF NOT EXIST "C:\Windows\MSF" (
-        mkdir "C:\Windows\MSF"
+    IF NOT EXIST "C:\Temp\Autopilot" (
+        mkdir "C:\Temp\Autopilot"
     )
     
     :: Print success message (green text)
     echo [92m^Device is connected to the internet.^[0m
 
     :: Download the PowerShell script and check if it's downloaded correctly
-    powershell.exe Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-WebRequest 'https://msfocbshare.blob.core.windows.net/ict-prod/Intune/Enroll/Manual/Autopilot_Register_hash.ps1' -OutFile 'C:\Windows\MSF\Autopilot_Register_hash.ps1'; "C:\Windows\MSF\Autopilot_Register_hash.ps1"
+    powershell.exe Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-WebRequest 'https://msfocbshare.blob.core.windows.net/ict-prod/Intune/Enroll/Manual/Autopilot_Register_hash.ps1' -OutFile 'C:\Temp\Autopilot\Autopilot_Register_hash.ps1'; "C:\Temp\Autopilot\Autopilot_Register_hash.ps1"
 
 ) ELSE (
     :: Print failure message (red text)
