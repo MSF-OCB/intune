@@ -1,11 +1,18 @@
+##################################################################
+#  _____                                                   _____ 
+# ( ___ )-------------------------------------------------( ___ )
+#  |   |                                                   |   | 
+#  |   |  █▀▀ █ █ █▀▄ █▀▀ █▀▄ █▀█ █▀▀ █ █  ▀█▀ █▀▀ █▀▀ █ █ |   | 
+#  |   |  █    █  █▀▄ █▀▀ █▀▄ █▀█ █   █▀▄   █  █▀▀ █   █▀█ |   | 
+#  |   |  ▀▀▀  ▀  ▀▀  ▀▀▀ ▀ ▀ ▀ ▀ ▀▀▀ ▀ ▀ ▀ ▀  ▀▀▀ ▀▀▀ ▀ ▀ |   | 
+#  |___|                                                   |___| 
+# (_____)-------------------------------------------------(_____)
 #
-#^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**
-# Author: Omar Assaf
+##################################################################
+# Authored by: Omar Assaf
 # X: omar_assaf
-#
-#^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**
 # Please credit the author if you use this script
-#^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**^**
+##################################################################
 #
 # Autopilot Onboarding Script
 # This will initiate some of the functions that might be required before Autopilot start
@@ -17,6 +24,16 @@
 #
 Start-Transcript -path "C:\ProgramData\MSF\Logs\Autopilot_Onboard.log" -Confirm:$false -force -append | Out-Null
 #
+#
+# Log Function
+function log() {
+    param (
+        [Parameter(Mandatory=$True)]
+        [string]$message
+    )
+    $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    Write-Output "$date - $message"
+}
 #
 ##############################################
 # Time Zone setup
@@ -43,8 +60,7 @@ Set-TimeZone -Id "$WindowsSimilar"
 # Get windows Time Zone reference from fetched list
 # Set Windows Auto Time Zone Updater service to start manually
 Set-Service -Name "tzautoupdate" -StartupType Automatic -Confirm:$false
-Write-Host "`nCurrent location is: $IanaTz, changing timezone to: $WindowsSimilar, with offset= $((Get-TimeZone -Id $WindowsSimilar).BaseUtcOffset).`n" -ForegroundColor Green
-#
+log "`nCurrent location is: $IanaTz.`nChanging timezone to: $WindowsSimilar, with offset= $((Get-TimeZone -Id $WindowsSimilar).BaseUtcOffset).`n"
 #
 #
 ##############################################
@@ -64,13 +80,28 @@ $MSFCustomDirectories = @(
 )
 foreach ($Directory in $MSFCustomDirectories) {
         If (Test-Path $Directory){
-                Write-Host "$Directory already exist." -ForegroundColor Cyan
+                log "$Directory already exist."
         }
-        else { New-Item -Path $Directory -ItemType Directory -Force
-                Write-Host "$Directory was created." -ForegroundColor Green
+        else { New-Item -Path $Directory -ItemType Directory -Force > $null
+                log "$Directory was created."
         }
 }
 #
+#
+###############################################
+# Folder Permissions Configuration
+##############################################
+#
+#
+# Set read-write permissions for Everyone on the folder and subfolders
+$MSFDirPerm = @(
+    "C:\Program Files\_SpecialApps",
+    "C:\Program Files (x86)\_SpecialApps"
+)
+
+foreach ($folder in $MSFDirPerm) {
+    icacls $folder /grant "Users:(OI)(CI)F" /T
+}
 #
 #
 ###############################################
@@ -87,22 +118,23 @@ $ProjectCode = ($ComputerList | where-object Serial -EQ $DeviceSN).Project
 #
 If ($null -ne $ProjectCode){
     # Set the System environment variables
-    Write-Host "> Setting system environment variable to: $ProjectCode."
+    log "> Setting system environment variable to: $ProjectCode."
     [System.Environment]::SetEnvironmentVariable("MSFPROJECTCODE", $ProjectCode, "Machine")
     If (!(Test-Path $RegPath) -or !(Test-Path $RegPathFusion)){
         New-Item -Path $RegPath -ErrorAction SilentlyContinue
         New-Item -Path $RegPathFusion -ErrorAction SilentlyContinue
-        Write-Host "`n> Completed Creating GLPI Registry entries.`n"
+        log "`n> Completed Creating GLPI Registry entries.`n"
     }
-    Write-Host "> Updating registry string tag to: FIELDOCB$ProjectCode."
+    log "> Updating registry string tag to: FIELDOCB$ProjectCode."
     $GlpiRegModify = New-ItemProperty -Path $RegPath -PropertyType String -Name "tag" -Value "FIELDOCB$ProjectCode" -Force
-    $RegModifyFusion = New-ItemProperty -Path $RegPathFusion -PropertyType String -Name "tag" -Value "FIELDOCB$ProjectCode" -Force
+    #$RegModifyFusion = New-ItemProperty -Path $RegPathFusion -PropertyType String -Name "tag" -Value "FIELDOCB$ProjectCode" -Force
     $GlpiUpdatedPath = (($GlpiRegModify.PSPath).ToString()) -Replace "M.*::",""
-    Write-Host "> Updated the following key: `n  Path = $GlpiUpdatedPath`n  tag = $($GlpiRegModify.tag)"
+    log "> Updated the following key: `n  Path = $GlpiUpdatedPath`n  tag = $($GlpiRegModify.tag)"
 }
 Else {
-        Write-Output "No project code is assigned to $DeviceSN."
+        log "No project code is assigned to: $DeviceSN."
 }
+#
 #
 ###############################################
 # Environment variables Configuration
@@ -124,13 +156,12 @@ $env:MSFLOGS = "C:\programdata\MSF\logs"
 [System.Environment]::SetEnvironmentVariable("MSFOSVERSION", $env:MSFOSVERSION, "Machine")
 [System.Environment]::SetEnvironmentVariable("MSFSECTION", $env:MSFSECTION, "Machine")
 [System.Environment]::SetEnvironmentVariable("MSFLOGS", $env:MSFLOGS, "Machine")
-Write-Host "`nComputer Environment variables had been updated`n" -ForegroundColor Green
+log "System Environment variables had been updated.`n"
 #
 #
 ##############################################
 # Download PDF Desktop
 ##############################################
-#
 #
 #
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
@@ -140,7 +171,7 @@ ForEach ($row in $CSV) {
 $Address = $row.URL
 $Folder = $row.Destination
 Invoke-RestMethod -Method Get -Uri $Address -OutFile $Folder -UseBasicParsing
-Write-Host "Downloading: $($Address.split('/')[5]) " -ForegroundColor Green
+log "Downloading: $($Address.split('/')[5]) "
 }
 #
 #
@@ -151,17 +182,39 @@ Write-Host "Downloading: $($Address.split('/')[5]) " -ForegroundColor Green
 #
 if (!(Get-localuser -Name "msfD0ct0r" -ErrorAction SilentlyContinue)){
 New-LocalUser -Name "msfD0ct0r" -NoPassword
-Write-Host "`nLocal account creation completed." -ForegroundColor Green
-} else {Write-Host "`nLocal account "msfD0ct0r" already exist." -ForegroundColor Cyan}
+log "Local account creation completed."
+}
+else {log "Local account msfD0ct0r already exist."}
+#
+#
+##############################################
+# Delivery Optimization Win10
+##############################################
+#
+#
+# Enable Delivery Optimization Peer Selection (DNS-SD)
+$RegPathDODns = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization"
+if ((Get-CimInstance -ClassName Win32_OperatingSystem).Version -lt '10.0.19041') {
+    Write-Output "This script is only supported on Windows 10 version 19041 or later, or Windows 11. Exiting script."
+}else{
+    try {
+        if ((Get-Item -Path $RegPathDODns -ErrorAction SilentlyContinue | Get-ItemProperty -Name "DORestrictPeerSelectionBy" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty "DORestrictPeerSelectionBy") -ne "2"){
+            # Create registry value entry to enable Delivery Optimization Peer Selection (DNS-SD)
+            Write-Output "Creating registry value entry for Delivery Optimization Peer Selection (DNS-SD)"
+            New-Item -Path $RegPathDODns -Force | New-ItemProperty -Name "DORestrictPeerSelectionBy" -Value "2" -PropertyType DWORD -Force | Out-Null
+            Restart-Service -Name dosvc -Force -Verbose
+        }elseif ((Get-Item -Path $RegPathDODns  | Get-ItemProperty -Name "DORestrictPeerSelectionBy" | Select-Object -ExpandProperty "DORestrictPeerSelectionBy") -eq "2") {
+            Write-Output "Script value already set. Delivery Optimization Peer Selection is configured to use DNS-SD to discover peers."
+        }
+    } catch {
+        Write-Error "Failed to create registry entry for Delivery Optimizatio Peer Selection. Full error details: $($_.Exception.Message)"
+    }
+}
 #
 #
 ##############################################
 # Registry - Machine based Configuration
 ##############################################
-#
-#
-# Enable Delivery Optimization Peer Selection (DNS-SD)
-New-Item "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" -Force | New-ItemProperty -Name "DORestrictPeerSelectionBy" -PropertyType DWord -Value 2 -Force
 #
 #
 # Disable network new location
@@ -203,7 +256,6 @@ New-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation
 #
 # Load default profile registry so we can modify
 reg.exe load "HKLM\User0" "C:\Users\Default\NTUSER.DAT"
-
 #
 #
 # SearchBox taskbar for default user profile
@@ -226,9 +278,8 @@ Start-Sleep -Seconds 5
 # Unload the default registery
 [gc]::Collect()
 reg.exe unload "HKLM\User0"
-Write-Host "`nCleaning and unloading hive completed" -ForegroundColor Green
+log "Cleaning and unloading hive completed"
 
-#
 #
 #
 ##############################################
@@ -242,8 +293,8 @@ If ($WinVer -lt 10.0.2){
         $QuickAssistStat = Get-WindowsCapability -online -Name *QuickAssist*
         If ($QuickAssistStat.State -eq 'Installed') {
                 Remove-WindowsCapability -Online -Name $QuickAssistStat.name -ErrorAction Continue
-        }else {Write-Host "Quick assist is not installed." -ForegroundColor Cyan}
-}else {Write-Host "`nYou are running Win 11, uninstalltion of Quick Assist will be via AppxPackages.`n" -ForegroundColor Cyan}
+        }else {log "Quick assist is not installed."}
+}else {log "You are running Win 11, uninstalltion of Quick Assist will be via AppxPackages.`n"}
 #
 #
 # Specify windows Appx builtin to be removed
@@ -255,21 +306,21 @@ $AppListArray = $AppListContent -split "`n" -ne ''
 foreach ($Appx in $AppListArray ) {
     if (Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Appx -ErrorAction Continue) {
             Get-AppxProvisionedPackage -Online | Where-Object DisplayName -like $Appx | Remove-AppxProvisionedPackage -Online
-            Write-Host "Removed provisioned package for $Appx." -ForegroundColor Green
+            log "Removed provisioned package for $Appx."
     } else {
-            Write-Host "Provisioned package for $Appx not found." -ForegroundColor Cyan
+            log "Provisioned package for $Appx not found."
             }  
     if (Get-AppxPackage -Name $Appx -ErrorAction SilentlyContinue) {
         Get-AppxPackage -allusers -Name $Appx | Remove-AppxPackage -AllUsers
-        Write-Host "Removed $Appx." -ForegroundColor Green
+        log "Removed $Appx."
     } else {
-        Write-Host "$Appx not found." -ForegroundColor Cyan
+        log "$Appx not found."
         }
 }
 #
 #
 #
-Write-Host "`nAutopilot onboarding is completed." -ForegroundColor Green
+log "Autopilot onboarding is completed."
 #
 #
 #*********************************************
