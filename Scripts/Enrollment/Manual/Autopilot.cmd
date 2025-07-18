@@ -2,7 +2,7 @@
 :: Script to register devices to autopilot manually
 
 :: Check if device can ping the internet (1.1.1.1 is used here as a placeholder)
-ping -n 2 -w 700 1.1.1.1 | find "TTL=" > NUL
+ping -n 2 -w 700 8.8.8.8 | find "TTL=" > NUL
 IF %ERRORLEVEL% EQU 0 (
     :: Check if folder C:\Windows\MSF exists, create if not
     IF NOT EXIST "C:\Temp\Autopilot" (
