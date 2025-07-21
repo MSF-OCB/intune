@@ -17,3 +17,4 @@ Microsoft.MixedReality.Portal
 Microsoft.MicrosoftSolitaireCollection
 Microsoft.Getstarted
 Microsoft.BingWeather
+MicrosoftTeams
