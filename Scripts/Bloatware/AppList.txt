@@ -1,12 +1,13 @@
-Microsoft.Xbox.TCUI
 MicrosoftCorporationII.QuickAssist
 Microsoft.ZuneVideo
+Microsoft.GamingApp
+Microsoft.Xbox.TCUI
 Microsoft.XboxApp
-Microsoft.MicrosoftOfficeHub
 Microsoft.XboxGameOverlay
 Microsoft.XboxGamingOverlay
 Microsoft.XboxIdentityProvider
 Microsoft.XboxSpeechToTextOverlay
+Microsoft.MicrosoftOfficeHub
 Microsoft.GetHelp
 Microsoft.Office.OneNote
 Microsoft.windowscommunicationsapps
@@ -18,3 +19,4 @@ Microsoft.MicrosoftSolitaireCollection
 Microsoft.Getstarted
 Microsoft.BingWeather
 MicrosoftTeams
+Microsoft.BingNews
