@@ -4,7 +4,6 @@ Microsoft.GamingApp
 Microsoft.Xbox.TCUI
 Microsoft.XboxApp
 Microsoft.XboxGameOverlay
-Microsoft.XboxGameCallableUI
 Microsoft.XboxGamingOverlay
 Microsoft.XboxIdentityProvider
 Microsoft.XboxSpeechToTextOverlay
