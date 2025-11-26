@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "route": "/.well-known/apple-app-site-association",
+      "headers": { "Content-Type": "application/json" }
+    },
+    {
+      "route": "/.well-known/com.apple.remotemanagement",
+      "headers": { "Content-Type": "application/json" }
+    }
+  ]
+}
