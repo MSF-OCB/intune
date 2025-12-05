@@ -21,3 +21,4 @@ Microsoft.BingWeather
 MicrosoftTeams
 Microsoft.BingNews
 MicrosoftCorporationII.MicrosoftFamily
+Microsoft.MicrosoftJournal
