@@ -20,3 +20,4 @@ Microsoft.Getstarted
 Microsoft.BingWeather
 MicrosoftTeams
 Microsoft.BingNews
+MicrosoftCorporationII.MicrosoftFamily
