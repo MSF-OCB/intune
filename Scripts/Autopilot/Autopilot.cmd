@@ -1,5 +1,5 @@
 @echo off
-:: Script to register devices to autopilot manually
+:: Script to register devices hardware ID to autopilot manually
 :: Created by X: omar_assaf
 
 :: Check internet connectivity
