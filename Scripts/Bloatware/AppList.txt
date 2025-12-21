@@ -10,7 +10,6 @@ Microsoft.XboxSpeechToTextOverlay
 Microsoft.MicrosoftOfficeHub
 Microsoft.GetHelp
 Microsoft.Office.OneNote
-Microsoft.windowscommunicationsapps
 Microsoft.WindowsFeedbackHub
 Microsoft.SkypeApp
 Microsoft.People
