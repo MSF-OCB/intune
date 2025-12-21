@@ -8,6 +8,7 @@ Microsoft.XboxGamingOverlay
 Microsoft.XboxIdentityProvider
 Microsoft.XboxSpeechToTextOverlay
 Microsoft.MicrosoftOfficeHub
+Microsoft.windowscommunicationsapps
 Microsoft.GetHelp
 Microsoft.Office.OneNote
 Microsoft.WindowsFeedbackHub
