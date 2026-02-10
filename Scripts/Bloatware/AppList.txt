@@ -9,7 +9,6 @@ Microsoft.XboxIdentityProvider
 Microsoft.XboxSpeechToTextOverlay
 Microsoft.MicrosoftOfficeHub
 Microsoft.windowscommunicationsapps
-Microsoft.Office.OneNote
 Microsoft.WindowsFeedbackHub
 Microsoft.SkypeApp
 Microsoft.People
