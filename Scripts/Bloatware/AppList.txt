@@ -1,11 +1,7 @@
 MicrosoftCorporationII.QuickAssist
 Microsoft.ZuneVideo
 Microsoft.GamingApp
-Microsoft.Xbox.TCUI
 Microsoft.XboxApp
-Microsoft.XboxGameOverlay
-Microsoft.XboxGamingOverlay
-Microsoft.XboxIdentityProvider
 Microsoft.XboxSpeechToTextOverlay
 Microsoft.MicrosoftOfficeHub
 Microsoft.windowscommunicationsapps
