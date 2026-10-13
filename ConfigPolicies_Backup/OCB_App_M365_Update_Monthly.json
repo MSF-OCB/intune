@@ -1,0 +1,145 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('8ffe28d8-1dd5-4df3-b5cd-7512d3525239')/settings",
+  "description": "Cloned policy from OCB_App_M365_Update_Semi-Preview",
+  "name": "OCB_App_M365_Update_Monthly",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2024-07-05T14:59:01.0841762Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2024-08-13T09:32:09.174136Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "8ffe28d8-1dd5-4df3-b5cd-7512d3525239",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v3~policy~l_microsoftofficemachine~l_updates_l_deferupdatedays_1",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_policy_config_office16v3~policy~l_microsoftofficemachine~l_updates_l_deferupdatedays_l_deferupdatedaysid",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": 0,
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v3~policy~l_microsoftofficemachine~l_updates_l_deferupdatedays",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_enableautomaticupdates_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_enableautomaticupdates",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "1"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_hideenabledisableupdates_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_hideenabledisableupdates",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "2"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_hideupdatenotifications_0",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_hideupdatenotifications",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "3"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "pdates~policy~l_microsoftofficemachine~l_updates_l_updatebranch_1",
+          "children": [
+            {
+              "choiceSettingValue": {
+                "value": "pdates~policy~l_microsoftofficemachine~l_updates_l_updatebranch_l_updatebranchid_monthlyenterprise",
+                "children": [],
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "pdates~policy~l_microsoftofficemachine~l_updates_l_updatebranch_l_updatebranchid",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "pdates~policy~l_microsoftofficemachine~l_updates_l_updatebranch",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "4"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_updatedeadline_1",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_updatedeadline_l_updatedeadlineid",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": "0",
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v2~policy~l_microsoftofficemachine~l_updates_l_updatedeadline",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "5"
+    }
+  ],
+  "settingCount": 6
+}

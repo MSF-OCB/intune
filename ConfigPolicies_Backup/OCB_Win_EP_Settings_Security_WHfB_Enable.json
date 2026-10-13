@@ -1,0 +1,135 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('8fe1b9cf-82f8-40f4-b91c-1786feb67de7')/settings",
+  "description": "",
+  "name": "OCB_Win_EP_Settings_Security_WHfB_Enable",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-08-10T16:23:13.31894Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "fcef01f2-439d-4c3f-9184-823fd6e97646_1",
+    "templateFamily": "endpointSecurityAccountProtection",
+    "templateDisplayName": "Account Protection"
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-08-10T18:30:30.650705Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "8fe1b9cf-82f8-40f4-b91c-1786feb67de7",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "0ece2bdc-57c1-4be9-93e9-ac9c395a9c94"
+        },
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "device_vendor_msft_passportforwork_{tenantid}_policies_usepassportforwork_true",
+                  "children": [],
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "92982814-15da-4812-8bbb-32c33f379651"
+                  }
+                },
+                "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}_policies_usepassportforwork",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "4023eea0-5289-42de-a970-9b5759460de4"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "device_vendor_msft_passportforwork_{tenantid}_policies_enablepinrecovery_false",
+                  "children": [],
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "06ebb101-6342-4081-b208-87a13151afa5"
+                  }
+                },
+                "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}_policies_enablepinrecovery",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "f7ac8ff7-1b26-469b-9872-00d68961fdc5"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}_policies_pincomplexity_minimumpinlength",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 7,
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "b2cec844-c747-466e-ae20-92969da2a10c"
+                  },
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "device_vendor_msft_passportforwork_{tenantid}_policies_pincomplexity_history",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 5,
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "55c0e424-1a3a-4990-a78b-de0eb8a92e0f"
+                  },
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "user_vendor_msft_passportforwork_{tenantid}",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "7b19da4c-18c1-44c6-a422-2e928d376c4f"
+        },
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "settingDefinitionId": "user_vendor_msft_passportforwork_{tenantid}_policies_pincomplexity_minimumpinlength",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 5,
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "b4394580-bf15-4333-a5eb-bd990133b6ce"
+                  },
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "1"
+    }
+  ],
+  "settingCount": 2
+}

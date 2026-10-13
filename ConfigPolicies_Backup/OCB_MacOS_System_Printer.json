@@ -1,0 +1,52 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('125ce241-07dc-4b1c-bc6c-cc10452b0f9a')/settings",
+  "description": "",
+  "name": "OCB_MacOS_System_Printer",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2024-08-02T18:43:00.1922185Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm,appleRemoteManagement",
+  "platforms": "macOS",
+  "lastModifiedDateTime": "2025-05-17T12:31:04.6864782Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "125ce241-07dc-4b1c-bc6c-cc10452b0f9a",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "com.apple.mcxprinting_com.apple.mcxprinting",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "com.apple.mcxprinting_requireadmintoaddprinters_false",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "com.apple.mcxprinting_requireadmintoaddprinters",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

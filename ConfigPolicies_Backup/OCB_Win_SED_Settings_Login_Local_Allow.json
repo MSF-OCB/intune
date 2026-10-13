@@ -1,0 +1,41 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('cd002004-9e41-4382-b783-c9631a2896eb')/settings",
+  "description": "",
+  "name": "OCB_Win_SED_Settings_Login_Local_Allow",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-02-26T09:45:29.4169845Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-04-01T16:38:56.7232952Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "cd002004-9e41-4382-b783-c9631a2896eb",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_policy_config_userrights_allowlocallogon",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "simpleSettingCollectionValue": [
+          {
+            "value": "Administrators",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

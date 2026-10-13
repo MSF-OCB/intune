@@ -1,0 +1,241 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('d7c28318-b36f-4484-b523-ad5f35c08ee4')/settings",
+  "description": "Allow to execute VictronConnect.exe",
+  "name": "OCB_Win_EUD_Security_Firewall_Rules_VictronConnect",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-02-10T07:51:40.2007941Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "19c8aa67-f286-4861-9aa0-f23541d31680_1",
+    "templateFamily": "endpointSecurityFirewall",
+    "templateDisplayName": "Windows Firewall Rules"
+  },
+  "creationSource": null,
+  "technologies": "mdm,microsoftSense",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-02-11T14:12:13.1077036Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "d7c28318-b36f-4484-b523-ad5f35c08ee4",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "76c7a8be-67d2-44bf-81a5-38c94926b1a1"
+        },
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "OCB_FW_Allow_Inbound_VictronConnect_TCP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 6,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_description",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_VictronConnect_TCP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files (x86)\\Victron Energy\\VictronConnect\\VictronConnect.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "OCB_FW_Allow_Inbound_VictronConnect_UDP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files (x86)\\Victron Energy\\VictronConnect\\VictronConnect.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_description",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_VictronConnect_UDP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 17,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

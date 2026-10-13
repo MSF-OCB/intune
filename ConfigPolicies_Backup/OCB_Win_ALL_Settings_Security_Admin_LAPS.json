@@ -1,0 +1,227 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('aaaecc73-3acb-4cdd-8e45-4d1f29eac5ff')/settings",
+  "description": "Configure LAPS on windows devices",
+  "name": "OCB_Win_ALL_Settings_Security_Admin_LAPS",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2023-06-13T16:22:31.7430633Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "adc46e5a-f4aa-4ff6-aeff-4f27bc525796_1",
+    "templateFamily": "endpointSecurityAccountProtection",
+    "templateDisplayName": "Local admin password solution (Windows LAPS)"
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-04-22T08:08:58.6890696Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "aaaecc73-3acb-4cdd-8e45-4d1f29eac5ff",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_laps_policies_backupdirectory_1",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_laps_policies_passwordagedays_aad",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": 30,
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "4d90f03d-e14c-43c4-86da-681da96a2f92"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "a3270f64-e493-499d-8900-90290f61ed8a"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_laps_policies_passwordcomplexity_5",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "aa883ab5-625e-4e3b-b830-a37a4bb8ce01"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_laps_policies_passwordcomplexity",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "8a7459e8-1d1c-458a-8906-7b27d216de52"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "1"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_laps_policies_passwordlength",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "da7a1dbd-caf7-4341-ab63-ece6f994ff02"
+        },
+        "simpleSettingValue": {
+          "value": 10,
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "d08f1266-5345-4f53-8ae1-4c20e6cb5ec9"
+          },
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "2"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_laps_policies_postauthenticationactions_11",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "68ff4f78-baa8-4b32-bf3d-5ad5566d8142"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_laps_policies_postauthenticationactions",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "d9282eb1-d187-42ae-b366-7081f32dcfff"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "3"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_laps_policies_postauthenticationresetdelay",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "a9e21166-4055-4042-9372-efaf3ef41868"
+        },
+        "simpleSettingValue": {
+          "value": 1,
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "0deb6aee-8dac-40c4-a9dd-c3718e5c1d52"
+          },
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "4"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled_true",
+          "children": [
+            {
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_laps_policies_automaticaccountmanagementenableaccount_true",
+                "children": [],
+                "settingValueTemplateReference": {
+                  "useTemplateDefault": false,
+                  "settingValueTemplateId": "5db30960-1e02-4100-9e2c-a2212596b054"
+                }
+              },
+              "settingDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementenableaccount",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+            },
+            {
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_laps_policies_automaticaccountmanagementtarget_1",
+                "children": [],
+                "settingValueTemplateReference": {
+                  "useTemplateDefault": false,
+                  "settingValueTemplateId": "5db30960-1e02-4100-9e2c-a2212596b054"
+                }
+              },
+              "settingDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementtarget",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+            },
+            {
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_laps_policies_automaticaccountmanagementrandomizename_true",
+                "children": [],
+                "settingValueTemplateReference": {
+                  "useTemplateDefault": false,
+                  "settingValueTemplateId": "5db30960-1e02-4100-9e2c-a2212596b054"
+                }
+              },
+              "settingDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementrandomizename",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+            },
+            {
+              "settingDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementnameorprefix",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": "msfd0ct0r",
+                "settingValueTemplateReference": {
+                  "useTemplateDefault": false,
+                  "settingValueTemplateId": "5db30960-1e02-4100-9e2c-a2212596b054"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "5db30960-1e02-4100-9e2c-a2212596b054"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "0d70f6fb-8f35-4fba-8ada-494b8a478703"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "5"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_laps_policies_administratoraccountname",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "d3d7d492-0019-4f56-96f8-1967f7deabeb"
+        },
+        "simpleSettingValue": {
+          "value": "msfd0ct0r",
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "992c7fce-f9e4-46ab-ac11-e167398859ea"
+          },
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "6"
+    }
+  ],
+  "settingCount": 7
+}

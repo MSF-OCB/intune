@@ -1,0 +1,53 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('59b47f4c-90cd-45ca-8017-2aca2ea31dfb')/settings",
+  "description": "",
+  "name": "OCB_Win_Setting_Update_Version_11_25H2",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-10-29T13:52:16.1911835Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2025-12-18T17:13:01.0723915Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "59b47f4c-90cd-45ca-8017-2aca2ea31dfb",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_policy_config_update_productversion",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "simpleSettingValue": {
+          "value": "Windows 11",
+          "settingValueTemplateReference": null,
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_policy_config_update_targetreleaseversion",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "simpleSettingValue": {
+          "value": "25H2",
+          "settingValueTemplateReference": null,
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "1"
+    }
+  ],
+  "settingCount": 2
+}

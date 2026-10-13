@@ -1,0 +1,1259 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('2adb6111-2d0c-480a-b46a-3b49b0d01c5f')/settings",
+  "description": "",
+  "name": "OCB_Win_EUD_Security_Firewall_Rules",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2023-07-25T14:42:19.525655Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "19c8aa67-f286-4861-9aa0-f23541d31680_1",
+    "templateFamily": "endpointSecurityFirewall",
+    "templateDisplayName": "Windows Firewall Rules"
+  },
+  "creationSource": null,
+  "technologies": "mdm,microsoftSense",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-02-01T23:51:50.4730025Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "2adb6111-2d0c-480a-b46a-3b49b0d01c5f",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "76c7a8be-67d2-44bf-81a5-38c94926b1a1"
+        },
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "7562f243-f281-4f6f-b7e6-ecdb76dc1f1b"
+                  }
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "4e150e1a-6a10-49b2-a20c-911bf44ea767"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "116a696a-3270-493e-9938-c336cf05ea98"
+                },
+                "simpleSettingValue": {
+                  "value": "Allow_Teams_Outbound",
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "12994a33-6185-4c3d-a0e8-69316f6293ea"
+                  },
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "406b5410-e52e-4df3-933f-1ee6e550a5c8"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "dd825fa0-961b-4fcc-a6b3-4d2dc0419d4e"
+                },
+                "simpleSettingValue": {
+                  "value": "%localappdata%\\Microsoft\\Teams\\current\\Teams.exe",
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "8c94fefa-67e5-40b5-8d97-6fca4f0c1e98"
+                  },
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "7dc9b243-cdd2-4359-b5f5-0c48edb8fd34"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_out",
+                  "children": [],
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "8b45e13b-952d-4164-bbac-37f4e97b7985"
+                  }
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "2114ad3d-157c-47d3-b646-60fcf50949c7"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": {
+                    "useTemplateDefault": false,
+                    "settingValueTemplateId": "419773d8-bffe-4d6f-a91f-286871963f5c"
+                  }
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "0565cfd1-21c2-4965-b87f-6bde2b8d2cbd"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Teams_Inbound",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "%localappdata%\\Microsoft\\Teams\\current\\Teams.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Zoom_Outbound",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\users\\%username%\\appdata\\roaming\\zoom\\bin\\zoom.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_out",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Zoom_Inbound",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\users\\%username%\\appdata\\roaming\\zoom\\bin\\zoom.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Inbound_Teams_msteams",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files\\WindowsApps\\MicrosoftTeams_23195.1506.2253.6778_x64__8wekyb3d8bbwe\\msteams.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Inbound_Teams_MS-teams",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files\\WindowsApps\\MSTeams_23202.1509.2295.2283_x64__8wekyb3d8bbwe\\ms-teams.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "OCB_FW_Allow_Inbound_TeamviewerApp_TCP_80,443,5938",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 6,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files (x86)\\TeamViewer\\TeamViewer.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_out",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_localportranges",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                  {
+                    "value": "443",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  },
+                  {
+                    "value": "5938",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  },
+                  {
+                    "value": "80",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "OCB_FW_Allow_Inbound_TeamviewerApp_UDP_5938",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 17,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files (x86)\\TeamViewer\\TeamViewer.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_localportranges",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                  {
+                    "value": "5938",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "OCB_FW_Allow_Inbound_TeamviewerService_TCP_80,443,5938",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 6,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files (x86)\\TeamViewer\\TeamViewer_Service.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_localportranges",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                  {
+                    "value": "80",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  },
+                  {
+                    "value": "443",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  },
+                  {
+                    "value": "5938",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "OCB_FW_Allow_Inbound_TeamviewerService_UDP_5938",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 17,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\Program Files (x86)\\TeamViewer\\TeamViewer_Service.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_localportranges",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingCollectionValue": [
+                  {
+                    "value": "5938",
+                    "settingValueTemplateReference": null,
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_description",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow Inbount TeamViewer Service (C:\\Program Files (x86)\\TeamViewer\\TeamViewer_Service.exe) to reach on port 5938 via UDP protocol",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Forticlient_Inbound_TCP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\program files\\fortinet\\forticlient\\forticlient.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_description",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Forticlient_TCP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 6,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          },
+          {
+            "children": [
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_name",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Forticlient_Inbound_UDP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_action_type",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction_in",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_direction",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled_1",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_enabled",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes_all",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_interfacetypes",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_app_filepath",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "C:\\program files\\fortinet\\forticlient\\forticlient.exe",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_protocol",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": 17,
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              },
+              {
+                "choiceSettingCollectionValue": [
+                  {
+                    "value": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles_2147483647",
+                    "children": [],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_profiles",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "vendor_msft_firewall_mdmstore_firewallrules_{firewallrulename}_description",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "simpleSettingValue": {
+                  "value": "Allow_Forticlient_UDP",
+                  "settingValueTemplateReference": null,
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

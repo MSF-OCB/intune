@@ -1,0 +1,103 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('009fadbc-c31f-4337-ad58-fb73eb024b81')/settings",
+  "description": "",
+  "name": "OCB_XXX_XXX",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-05-27T19:06:08.4052316Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm,appleRemoteManagement",
+  "platforms": "macOS",
+  "lastModifiedDateTime": "2026-05-27T19:06:08.4052316Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "009fadbc-c31f-4337-ad58-fb73eb024b81",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "com.apple.servicemanagement_com.apple.servicemanagement",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "settingDefinitionId": "com.apple.servicemanagement_rules",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "choiceSettingValue": {
+                          "value": "com.apple.servicemanagement_rules_item_ruletype_3",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      },
+                      {
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "value": "com.microsoft.OneDrive",
+                          "settingValueTemplateReference": null,
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                        },
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                      }
+                    ],
+                    "settingValueTemplateReference": null
+                  },
+                  {
+                    "children": [
+                      {
+                        "choiceSettingValue": {
+                          "value": "com.apple.servicemanagement_rules_item_ruletype_1",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      },
+                      {
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "value": "com.microsoft.OneDriveLauncher",
+                          "settingValueTemplateReference": null,
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                        },
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                      }
+                    ],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

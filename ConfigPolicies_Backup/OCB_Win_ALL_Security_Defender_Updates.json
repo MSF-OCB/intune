@@ -1,0 +1,82 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('9b10ab34-7155-40e2-a83c-a3c3cee4bfd4')/settings",
+  "description": "Defender Update controls",
+  "name": "OCB_Win_ALL_Security_Defender_Updates",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2023-06-13T16:30:22.0291194Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "e3f74c5a-a6de-411d-aef6-eb15628f3a0a_1",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Defender Update controls"
+  },
+  "creationSource": null,
+  "technologies": "mdm,microsoftSense",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-04-22T08:08:13.8216703Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "9b10ab34-7155-40e2-a83c-a3c3cee4bfd4",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_defender_configuration_engineupdateschannel_5",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "afc8df70-7b19-4335-b200-bf4b7e098f67"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_defender_configuration_engineupdateschannel",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "f7e1409d-9c85-4a3f-85a6-ad05cc8ccf13"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_defender_configuration_platformupdateschannel_5",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "d3b0d61a-bdc5-4507-84d0-5f2a4a3e11a5"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_defender_configuration_platformupdateschannel",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "e78b3ace-75d0-4aad-b3fa-4f49390d6483"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "1"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_defender_configuration_securityintelligenceupdateschannel_5",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "41ea06bf-e94a-482a-9aaa-7fd535fb4150"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_defender_configuration_securityintelligenceupdateschannel",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "ba273649-e186-4377-89d5-87405bc9a87c"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "2"
+    }
+  ],
+  "settingCount": 3
+}

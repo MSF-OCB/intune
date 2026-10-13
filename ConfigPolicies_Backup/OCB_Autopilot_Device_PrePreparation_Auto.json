@@ -1,0 +1,76 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('6ce0ee45-4ea6-4ecf-8785-0988e67ab0cc')/settings",
+  "description": "",
+  "name": "OCB_Autopilot_Device_PrePreparation_Auto",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-02-02T10:28:14.7474263Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "a6157a7f-aa00-42d9-ac82-7d2479f545db_1",
+    "templateFamily": "enrollmentConfiguration",
+    "templateDisplayName": "Win365 Device Preparation"
+  },
+  "creationSource": null,
+  "technologies": "enrollment",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-03-28T22:53:44.409398Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "6ce0ee45-4ea6-4ecf-8785-0988e67ab0cc",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "enrollment_autopilot_dpp_allowedappids",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "a9dedfd6-c3b2-46d9-ae39-91fd0dcb7a20"
+        },
+        "simpleSettingCollectionValue": [
+          {
+            "value": "{\"id\":\"264557c3-6432-4dfc-b27a-18cb651c41c9\",\"type\":\"#microsoft.graph.win32LobApp\"}",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "{\"id\":\"513f4bbb-ece8-4182-bf6d-4286811dd207\",\"type\":\"#microsoft.graph.win32LobApp\"}",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "{\"id\":\"dda1b6c0-f5c1-455f-a6fd-0faa9125c3f5\",\"type\":\"#microsoft.graph.winGetApp\"}",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "{\"id\":\"eb8aa2e9-b9dc-4864-b5a8-84ccc9c4026d\",\"type\":\"#microsoft.graph.win32LobApp\"}",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "enrollment_autopilot_dpp_allowedscriptids",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "ff20a4a9-a2f4-4a2e-84e0-4cd1dc9bed31"
+        },
+        "simpleSettingCollectionValue": [
+          {
+            "value": "4e65abfc-6ddd-4d64-8911-c04b300cbde5",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+      },
+      "id": "1"
+    }
+  ],
+  "settingCount": 2
+}

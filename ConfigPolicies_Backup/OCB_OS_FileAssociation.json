@@ -1,0 +1,39 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('e08852c6-a06a-458a-8143-48811926a049')/settings",
+  "description": "set default file association for specific file types\n-This is user-based policy (REMEBER THAT)\n-Its applied every new session for the user",
+  "name": "OCB_OS_FileAssociation",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2023-07-05T07:13:05.7088964Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2024-10-10T18:32:46.8384219Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "e08852c6-a06a-458a-8143-48811926a049",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_policy_config_applicationdefaults_defaultassociationsconfiguration",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "simpleSettingValue": {
+          "value": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPERlZmF1bHRBc3NvY2lhdGlvbnM+CiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii5odG0iIFByb2dJZD0iTVNFZGdlSFRNIiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIi8gPgogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIuaHRtbCIgUHJvZ0lkPSJNU0VkZ2VIVE0iIEFwcGxpY2F0aW9uTmFtZT0iTWljcm9zb2Z0IEVkZ2UiLyA+CiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Imh0dHAiIFByb2dJZD0iTVNFZGdlSFRNIiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIi8gPgogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSJodHRwcyIgUHJvZ0lkPSJNU0VkZ2VIVE0iIEFwcGxpY2F0aW9uTmFtZT0iTWljcm9zb2Z0IEVkZ2UiLyA+CiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Im1pY3Jvc29mdC1lZGdlIiBQcm9nSWQ9IkFwcFg3cm05ZHJkZzhzazd2cW5kd2ozc2RqdzExeDk2amMweSIgQXBwbGljYXRpb25OYW1lPSJNaWNyb3NvZnQgRWRnZSIvID4KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0ibWljcm9zb2Z0LWVkZ2UtaG9sb2dyYXBoaWMiIFByb2dJZD0iQXBwWDN4eHMzMTN3d2tmamh5dGhzYjhxNDZ4ZHNxOGQyY3Z2IiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIi8gPgogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSJtcy14YmwtM2Q4YjkzMGYiIFByb2dJZD0iQXBwWGRuNWIwajY5OWthNWZxdnJyM3BnamFkMGV2cWFybTZkIiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIi8gPgogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSJjYWxsdG8iIFByb2dJZD0iQXBwWHpha2ZnZWVqc213aGd6cDhmZG5wODdkeWZoOWtiOW0yIiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBUZWFtcyIvPgogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSJtYWlsdG8iIFByb2dJZD0iT3V0bG9vay5VUkwubWFpbHRvLjE1IiBBcHBsaWNhdGlvbk5hbWU9Ik91dGxvb2siLyA+CiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii5lbWwiIFByb2dJZD0iT3V0bG9vay5VUkwubWFpbHRvLjE1IiBBcHBsaWNhdGlvbk5hbWU9Ik91dGxvb2siLyA+CiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Im91dGxvb2ttYWlsIiBQcm9nSWQ9Ik91dGxvb2suVVJMLm1haWx0by4xNSIgQXBwbGljYXRpb25OYW1lPSJPdXRsb29rIi8gPgogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIuaWNzIiBQcm9nSWQ9Ik91dGxvb2suRmlsZS5pY3MuMTUiIEFwcGxpY2F0aW9uTmFtZT0iT3V0bG9vayIvID4KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLjd6IiBQcm9nSWQ9IjctWmlwIiBBcHBsaWNhdGlvbk5hbWU9IjctWmlwIEZpbGUgTWFuYWdlciIvID4KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLnppcCIgUHJvZ0lkPSI3LVppcCIgQXBwbGljYXRpb25OYW1lPSI3LVppcCBGaWxlIE1hbmFnZXIiLyA+CiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii5yYXIiIFByb2dJZD0iNy1aaXAiIEFwcGxpY2F0aW9uTmFtZT0iNy1aaXAgRmlsZSBNYW5hZ2VyIi8gPgo8L0RlZmF1bHRBc3NvY2lhdGlvbnM+",
+          "settingValueTemplateReference": null,
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

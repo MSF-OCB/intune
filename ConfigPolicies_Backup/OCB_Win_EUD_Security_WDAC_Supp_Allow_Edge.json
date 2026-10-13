@@ -1,0 +1,61 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('0b2a467f-1752-41a9-9c08-fee1d590e401')/settings",
+  "description": "",
+  "name": "OCB_Win_EUD_Security_WDAC_Supp_Allow_Edge",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2023-11-06T21:00:33.788324Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "4321b946-b76b-4450-8afd-769c08b16ffc_1",
+    "templateFamily": "endpointSecurityApplicationControl",
+    "templateDisplayName": "App Control for Business"
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-01-27T22:04:32.7226267Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "0b2a467f-1752-41a9-9c08-fee1d590e401",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_applicationcontrol_configure_xml_selected",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_xml",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": {
+                "settingInstanceTemplateId": "4d709667-63d7-42f2-8e1b-b780f6c3c9c7"
+              },
+              "simpleSettingValue": {
+                "value": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SiPolicy xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" PolicyType=\"Supplemental Policy\" xmlns=\"urn:schemas-microsoft-com:sipolicy\">\r\n  <VersionEx>10.0.0.0</VersionEx>\r\n  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>\r\n  <PolicyID>{C7F12CDB-D6B2-4FB0-BA78-AA7803439393}</PolicyID>\r\n  <BasePolicyID>{66A31491-41D6-47AB-8DF6-06DC6E7ADE0D}</BasePolicyID>\r\n  <Rules>\r\n    <Rule>\r\n      <Option>Enabled:Unsigned System Integrity Policy</Option>\r\n    </Rule>\r\n    <Rule>\r\n      <Option>Enabled:Inherit Default Policy</Option>\r\n    </Rule>\r\n    <Rule>\r\n      <Option>Enabled:Intelligent Security Graph Authorization</Option>\r\n    </Rule>\r\n    <Rule>\r\n      <Option>Enabled:Managed Installer</Option>\r\n    </Rule>\r\n  </Rules>\r\n  <EKUs />\r\n  <FileRules>\r\n    <FileAttrib ID=\"ID_FILEATTRIB_A_1\" FriendlyName=\"Allow files based on file attributes: msedge.exe and Microsoft Edge\" FileName=\"msedge.exe\" ProductName=\"Microsoft Edge\" />\r\n  </FileRules>\r\n  <Signers>\r\n    <Signer Name=\"Microsoft Code Signing PCA 2011\" ID=\"ID_SIGNER_S_1_0_0\">\r\n      <CertRoot Type=\"TBS\" Value=\"F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E\" />\r\n      <CertPublisher Value=\"Microsoft Corporation\" />\r\n      <FileAttribRef RuleID=\"ID_FILEATTRIB_A_1\" />\r\n    </Signer>\r\n  </Signers>\r\n  <SigningScenarios>\r\n    <SigningScenario ID=\"ID_SIGNINGSCENARIO_DRIVERS_1\" FriendlyName=\"Auto generated policy on 11-06-2023\" Value=\"131\">\r\n      <ProductSigners>\r\n        <AllowedSigners>\r\n          <AllowedSigner SignerId=\"ID_SIGNER_S_1_0_0\" />\r\n        </AllowedSigners>\r\n      </ProductSigners>\r\n    </SigningScenario>\r\n    <SigningScenario ID=\"ID_SIGNINGSCENARIO_WINDOWS\" FriendlyName=\"Auto generated policy on 11-06-2023\" Value=\"12\">\r\n      <ProductSigners />\r\n    </SigningScenario>\r\n  </SigningScenarios>\r\n  <UpdatePolicySigners />\r\n  <CiSigners />\r\n  <HvciOptions>0</HvciOptions>\r\n  <Settings>\r\n    <Setting Provider=\"PolicyInfo\" Key=\"Information\" ValueName=\"Name\">\r\n      <Value>\r\n        <String>My Supplemental Policy_2023-11-06_AllowEdge</String>\r\n      </Value>\r\n    </Setting>\r\n    <Setting Provider=\"PolicyInfo\" Key=\"Information\" ValueName=\"Id\">\r\n      <Value>\r\n        <String>2023-11-06</String>\r\n      </Value>\r\n    </Setting>\r\n  </Settings>\r\n</SiPolicy>",
+                "settingValueTemplateReference": {
+                  "useTemplateDefault": false,
+                  "settingValueTemplateId": "88f6f096-dedb-4cf1-ac2f-4b41e303adb5"
+                },
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "b28c7dc4-c7b2-4ce2-8f51-6ebfd3ea69d3"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "1de98212-6949-42dc-a89c-e0ff6e5da04b"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

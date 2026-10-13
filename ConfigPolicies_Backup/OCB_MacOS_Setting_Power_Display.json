@@ -1,0 +1,76 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('391a1b8f-d254-41b8-b8b6-c0d5daab3cf9')/settings",
+  "description": "",
+  "name": "OCB_MacOS_Setting_Power_Display",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-05-27T17:16:31.565696Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm,appleRemoteManagement",
+  "platforms": "macOS",
+  "lastModifiedDateTime": "2025-05-27T17:16:31.565696Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "391a1b8f-d254-41b8-b8b6-c0d5daab3cf9",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "com.apple.mcx_com.apple.mcx-energysaver",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "settingDefinitionId": "com.apple.mcx_com.apple.energysaver.portable.acpower",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "settingDefinitionId": "com.apple.mcx_com.apple.energysaver.portable.acpower_disk sleep timer",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "value": 0,
+                          "settingValueTemplateReference": null,
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                        },
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                      },
+                      {
+                        "settingDefinitionId": "com.apple.mcx_com.apple.energysaver.portable.acpower_system sleep timer",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "value": 0,
+                          "settingValueTemplateReference": null,
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                        },
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                      }
+                    ],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

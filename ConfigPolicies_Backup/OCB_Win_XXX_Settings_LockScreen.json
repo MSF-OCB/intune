@@ -1,0 +1,104 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('f678b4b6-b0e7-4d1a-8bfe-ee1e02d621ca')/settings",
+  "description": "OCB_Win_XXX_UFD_Settings_LockScreen",
+  "name": "OCB_Win_XXX_Settings_LockScreen",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-11-11T22:41:36.6586505Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-04-01T16:38:06.8011878Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "f678b4b6-b0e7-4d1a-8bfe-ee1e02d621ca",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_forcedefaultlockscreen_1",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_forcedefaultlockscreen_lockscreenimage",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": "https://msfocbshare.blob.core.windows.net/ict-sd/docs/lockscreen.jpg",
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            },
+            {
+              "choiceSettingValue": {
+                "value": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_forcedefaultlockscreen_lockscreenoverlaysdisabled_1",
+                "children": [],
+                "settingValueTemplateReference": null
+              },
+              "settingDefinitionId": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_forcedefaultlockscreen_lockscreenoverlaysdisabled",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_forcedefaultlockscreen",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_nochanginglockscreen_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_nochanginglockscreen",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "1"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_policy_config_devicelock_enforcelockscreenandlogonimage",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "simpleSettingValue": {
+          "value": "https://msfocbshare.blob.core.windows.net/ict-sd/docs/lockscreen.jpg",
+          "settingValueTemplateReference": null,
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "2"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "vendor_msft_personalization_lockscreenimageurl",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "simpleSettingValue": {
+          "value": "https://msfocbshare.blob.core.windows.net/ict-sd/docs/lockscreen.jpg",
+          "settingValueTemplateReference": null,
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "3"
+    }
+  ],
+  "settingCount": 4
+}

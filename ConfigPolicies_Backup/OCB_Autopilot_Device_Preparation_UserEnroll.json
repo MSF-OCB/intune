@@ -1,0 +1,314 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('4d5fc99b-b8c2-4619-baa4-d0194bfe7b58')/settings",
+  "description": "",
+  "name": "OCB_Autopilot_Device_Preparation_UserEnroll",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-09-16T08:55:40.6598545Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "70d256b3-6120-4f88-9e00-0972ec64fc83_1",
+    "templateFamily": "enrollmentConfiguration",
+    "templateDisplayName": "Device Preparation"
+  },
+  "creationSource": null,
+  "technologies": "enrollment",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-09-16T08:55:40.6598545Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "4d5fc99b-b8c2-4619-baa4-d0194bfe7b58",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_deploymentmode_0",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "5874c2f6-bcf1-463b-a9eb-bee64e2f2d82"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_deploymentmode",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "5180aeab-886e-4589-97d4-40855c646315"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_deploymenttype_0",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "e0af022f-37f3-4a40-916d-1ab7281c88d9"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_deploymenttype",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "f4184296-fa9f-4b67-8b12-1723b3f8456b"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "1"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_jointype_0",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "1fa84eb3-fcfa-4ed6-9687-0f3d486402c4"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_jointype",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "6310e95d-6cfa-4d2f-aae0-1e7af12e2182"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "2"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_accountype_0",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "bf13bb47-69ef-4e06-97c1-50c2859a49c2"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_accountype",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "d4f2a840-86d5-4162-9a08-fa8cc608b94e"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "3"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "enrollment_autopilot_dpp_timeout",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "6dec0657-dfb8-4906-a7ee-3ac6ee1edecb"
+        },
+        "simpleSettingValue": {
+          "value": 60,
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "0bbcce5b-a55a-4e05-821a-94bf576d6cc8"
+          },
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "4"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "enrollment_autopilot_dpp_customerrormessage",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "2ddf0619-2b7a-46de-b29b-c6191e9dda6e"
+        },
+        "simpleSettingValue": {
+          "value": "The setup had encountered an error, please contact dr.watson@brussels.msf.org",
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "fe5002d5-fbe9-4920-9e2d-26bfc4b4cc97"
+          },
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "5"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_allowskip_0",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "a2323e5e-ac56-4517-8847-b0a6fdb467e7"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_allowskip",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "2a71dc89-0f17-4ba9-bb27-af2521d34710"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "6"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_allowdiagnostics_1",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "c59d26fd-3460-4b26-b47a-f7e202e7d5a3"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_allowdiagnostics",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "e2b7a81b-f243-4abd-bce3-c1856345f405"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "7"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_language_0",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "9e1db8a0-0da1-4319-afc0-4953f9b7e2e1"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_language",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "d8ea8182-87a5-4998-bc73-f75e9ba0e69c"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "8"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_skipkeyboard_1",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "3bd97f73-b981-403d-8f05-dd712cfd96b1"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_skipkeyboard",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "6d44792b-24a4-4f7e-86c1-268cb7c6f6c5"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "9"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_skipeula_1",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "567c87ec-8e59-4509-b15c-65ce21281aea"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_skipeula",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "e860a384-443e-40be-a3ce-dec2cc2a917d"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "10"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_skipexpress_1",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_skipexpress",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "c9e2a8d3-7f8b-4c0a-9f1d-8e7c6b5e2e1f"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "11"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_applydevicerenametemplate_0",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "13938c26-532a-4e53-8bfa-80ef7ef26702"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_applydevicerenametemplate",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "c7d35446-1da8-42b4-a945-a79cda671f3d"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "12"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "enrollment_autopilot_dpp_forcedenrollment_1",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "e3ebb2d5-300b-41bc-a97a-5865061d7149"
+          }
+        },
+        "settingDefinitionId": "enrollment_autopilot_dpp_forcedenrollment",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "b229d124-ce03-4b7c-a750-94595e5f6ee6"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "13"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "enrollment_autopilot_dpp_allowedappids",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "70d22a8a-a03c-4f62-b8df-dded3e327639"
+        },
+        "simpleSettingCollectionValue": [
+          {
+            "value": "{\"id\":\"e4c603a4-4d0c-461a-92c8-f5b4a99bc304\",\"type\":\"#microsoft.graph.win32LobApp\"}",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          },
+          {
+            "value": "{\"id\":\"6d4b40d7-e22a-4874-9983-5ce189046316\",\"type\":\"#microsoft.graph.win32LobApp\"}",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+      },
+      "id": "14"
+    }
+  ],
+  "settingCount": 15
+}

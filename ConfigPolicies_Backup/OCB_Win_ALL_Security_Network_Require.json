@@ -1,0 +1,39 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('799ef758-a0ae-452b-8dff-164eac75aea4')/settings",
+  "description": "",
+  "name": "OCB_Win_ALL_Security_Network_Require",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-12-03T00:48:45.2882884Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-04-01T18:58:24.4277072Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "799ef758-a0ae-452b-8dff-164eac75aea4",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "vendor_msft_tenantlockdown_requirenetworkinoobe_true",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "vendor_msft_tenantlockdown_requirenetworkinoobe",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

@@ -1,0 +1,90 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('62987fc2-d76e-4e9b-8035-8c15c4f4d8e9')/settings",
+  "description": "",
+  "name": "OCB_MacOS_System_Encryption_FileVault",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-05-17T12:27:52.3726115Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm,appleRemoteManagement",
+  "platforms": "macOS",
+  "lastModifiedDateTime": "2025-05-17T12:27:52.3726115Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "62987fc2-d76e-4e9b-8035-8c15c4f4d8e9",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "com.apple.mcx.filevault2_com.apple.mcx.filevault2",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "com.apple.mcx.filevault2_enable_0",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "com.apple.mcx.filevault2_enable",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "com.apple.mcx.filevault2_forceenableinsetupassistant_true",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "com.apple.mcx.filevault2_forceenableinsetupassistant",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "com.apple.mcx_com.apple.mcx-fdefilevaultoptions",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "com.apple.mcx_dontallowfdedisable_true",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "com.apple.mcx_dontallowfdedisable",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "1"
+    }
+  ],
+  "settingCount": 2
+}

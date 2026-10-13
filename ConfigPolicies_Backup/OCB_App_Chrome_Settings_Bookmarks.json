@@ -1,0 +1,51 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('25186802-abf0-4dd6-b6a5-3d1bd3abe95e')/settings",
+  "description": "",
+  "name": "OCB_App_Chrome_Settings_Bookmarks",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-10-01T12:33:14.5670651Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2025-11-25T20:07:23.7731532Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "25186802-abf0-4dd6-b6a5-3d1bd3abe95e",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_chromeintunev1~policy~googlechrome_managedbookmarks_1",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_policy_config_chromeintunev1~policy~googlechrome_managedbookmarks_managedbookmarks",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": "[{\"toplevel_name\":\"MSF OCB\"},{\"url\":\"https://msfintl.sharepoint.com/sites/ocb-intranet\",\"name\":\"Intranet | MSF OCB\"},{\"url\":\"https://wedoo.ocb.msf.org/\",\"name\":\"WeDoo | MSF OCB\"},{\"url\":\"myhelp.brussels.msf.org\",\"name\":\"MyHelp - Your IT Support\"},{\"url\":\"https://www.soukmsf.org/en\",\"name\":\"Souk | MSF\"},{\"url\":\"https://media.msf.org/\",\"name\":\"Media Library | MSF\"},{\"url\":\"https://sherlog.msf.org\",\"name\":\"Sherlog | MSF\"},{\"url\":\"https://tembo.msf.org/\",\"name\":\"Tembo | MSF\"},{\"url\":\"https://geo.msf.org/home\",\"name\":\"GeoMSF | MSF\"},{\"url\":\"https://www.msf.org/glossary\",\"name\":\"Glossary | MSF\"},{\"url\":\"office.com\",\"name\":\"Microsoft 365 Copilot\"}]",
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_chromeintunev1~policy~googlechrome_managedbookmarks",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

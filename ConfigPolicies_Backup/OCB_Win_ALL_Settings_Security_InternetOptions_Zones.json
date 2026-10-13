@@ -1,0 +1,129 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('b1e1b189-1d0b-402b-9f4f-30a582291c9c')/settings",
+  "description": "Configure Zones for Internet Options:\n\n- To allow downloading of \"Jungle mail\" newsletter to Outlook automatically for users.\n-To allow users to \"preview\" files from Cassidy",
+  "name": "OCB_Win_ALL_Settings_Security_InternetOptions_Zones",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-02-21T15:06:19.4594652Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-06-28T02:22:35.8200983Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "b1e1b189-1d0b-402b-9f4f-30a582291c9c",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_1",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_iz_zonemapprompt",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "groupSettingCollectionValue": [
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_iz_zonemapprompt_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "https://brussels.eu.junglemailpages.com",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_iz_zonemapprompt_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "2",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                },
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_iz_zonemapprompt_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "https://gallery-eu.junglemail365.com",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_iz_zonemapprompt_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "2",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                },
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_iz_zonemapprompt_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "*.brussels.msfocb",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist_iz_zonemapprompt_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "1",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                }
+              ],
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_internetexplorer_allowsitetozoneassignmentlist",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

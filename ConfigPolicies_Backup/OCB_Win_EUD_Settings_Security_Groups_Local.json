@@ -1,0 +1,127 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('4a2e07bf-cdff-44cb-86e4-465acb9b0f8d')/settings",
+  "description": "Local security group on user End Points",
+  "name": "OCB_Win_EUD_Settings_Security_Groups_Local",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2023-07-13T19:13:50.467493Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "22968f54-45fa-486c-848e-f8224aa69772_1",
+    "templateFamily": "endpointSecurityAccountProtection",
+    "templateDisplayName": "Local user group membership"
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-02-02T00:03:27.4130012Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "4a2e07bf-cdff-44cb-86e4-465acb9b0f8d",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "de06bec1-4852-48a0-9799-cf7b85992d45"
+        },
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": {
+                  "settingInstanceTemplateId": "76fa254e-cbdb-4718-8bdd-cd41e57caa02"
+                },
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "choiceSettingValue": {
+                          "value": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_userselectiontype_users",
+                          "children": [
+                            {
+                              "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_users",
+                              "auditRuleInformation": null,
+                              "settingInstanceTemplateReference": null,
+                              "simpleSettingCollectionValue": [
+                                {
+                                  "value": "S-1-12-1-129400420-1103906302-2289251517-2615312944",
+                                  "settingValueTemplateReference": null,
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                                },
+                                {
+                                  "value": "S-1-12-1-1910495866-1103794948-3912389522-244862470",
+                                  "settingValueTemplateReference": null,
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                                },
+                                {
+                                  "value": "S-1-12-1-2776138400-1271560431-3138094473-2958056596",
+                                  "settingValueTemplateReference": null,
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                                },
+                                {
+                                  "value": "S-1-12-1-3349169641-1298266617-3953250451-2813298087",
+                                  "settingValueTemplateReference": null,
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                                },
+                                {
+                                  "value": "S-1-12-1-3267515629-1332598842-4214364849-1693220767",
+                                  "settingValueTemplateReference": null,
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                                }
+                              ],
+                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+                            }
+                          ],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_userselectiontype",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      },
+                      {
+                        "choiceSettingValue": {
+                          "value": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_action_add_update",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_action",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      },
+                      {
+                        "choiceSettingCollectionValue": [
+                          {
+                            "value": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_desc_administrators",
+                            "children": [],
+                            "settingValueTemplateReference": null
+                          }
+                        ],
+                        "settingDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_desc",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance"
+                      }
+                    ],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

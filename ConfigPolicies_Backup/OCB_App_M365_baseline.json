@@ -1,0 +1,429 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('e382f719-d73a-450c-8f80-9eedded48fdd')/settings",
+  "description": "Standard OCB configuration profile for Microsoft 365 Apps",
+  "name": "OCB_App_M365_baseline",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2023-06-13T11:33:35.1354502Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-01-17T00:01:53.4595896Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "e382f719-d73a-450c-8f80-9eedded48fdd",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_optionscustomizeribbon_l_displaydevelopertab_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_optionscustomizeribbon_l_displaydevelopertab",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_save_l_autorecoverdelay_1",
+          "children": [
+            {
+              "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_save_l_autorecoverdelay_l_secondsofidletimebeforeautorecoverstarts",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": 1,
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_save_l_autorecoverdelay",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "1"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_save_l_autorecovertime_1",
+          "children": [
+            {
+              "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_save_l_autorecovertime_l_saveautorecoverinfoevery",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": 1,
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_save_l_autorecovertime",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "2"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_firstrun_l_disablemovie_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_firstrun_l_disablemovie",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "3"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_firstrun_l_disableofficefirstrun_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_firstrun_l_disableofficefirstrun",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "4"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_office16v3~policy~l_microsoftofficesystem~l_miscellaneous437_l_officeinsideruserexperience_0",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_office16v3~policy~l_microsoftofficesystem~l_miscellaneous437_l_officeinsideruserexperience",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "5"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_miscellaneous437_l_suppressrecommendedsettingsdialog_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_miscellaneous437_l_suppressrecommendedsettingsdialog",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "6"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_disableoptinwizard_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_disableoptinwizard",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "7"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_enablecustomerexperienceimprovementprogram_0",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_office16v2~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_enablecustomerexperienceimprovementprogram",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "8"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_policy_config_office16v9~policy~l_microsoftofficemachine~l_miscellaneous_l_updatechannelselectormachine_0",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_office16v9~policy~l_microsoftofficemachine~l_miscellaneous_l_updatechannelselectormachine",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "9"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_1",
+          "children": [
+            {
+              "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "groupSettingCollectionValue": [
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "AccessAddin.DC",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "1",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                },
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "TeamViewerMeetingAddIn.AddIn",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "1",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                },
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "UCAddin.LyncAddin.1",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "1",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                },
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "TeamsAddin.FastConnect",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "1",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                },
+                {
+                  "children": [
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_key",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "ColleagueImport.ColleagueImportAddin",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins_l_listofmanagedaddins2_value",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "1",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                }
+              ],
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_miscellaneous_l_listofmanagedaddins",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "10"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_outlk16v7~policy~l_microsoftofficeoutlook~l_outlookoptions~l_delegates_l_delegatesentitemsstyle_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v7~policy~l_microsoftofficeoutlook~l_outlookoptions~l_delegates_l_delegatesentitemsstyle",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "11"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_outlk16v11~policy~l_microsoftofficeoutlook~l_outlookoptions~l_other_l_hidenewoutlooktoggle_0",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v11~policy~l_microsoftofficeoutlook~l_outlookoptions~l_other_l_hidenewoutlooktoggle",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "12"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_outlookoptions~l_other_l_makeoutlookthedefaultprogramforemailcontactsandcalendar_1",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_outlookoptions~l_other_l_makeoutlookthedefaultprogramforemailcontactsandcalendar",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "13"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_searchfolders_l_keepsearchfoldersoffline_1",
+          "children": [
+            {
+              "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_searchfolders_l_keepsearchfoldersoffline_l_specifydaystokeepfoldersaliveinofflineorcachedmode",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": 60,
+                "settingValueTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_outlk16v2~policy~l_microsoftofficeoutlook~l_searchfolders_l_keepsearchfoldersoffline",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "14"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "user_vendor_msft_policy_config_teamsv2~policy~l_teams_teams_preventfirstlaunchafterinstall_policy_0",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_teamsv2~policy~l_teams_teams_preventfirstlaunchafterinstall_policy",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "15"
+    }
+  ],
+  "settingCount": 16
+}

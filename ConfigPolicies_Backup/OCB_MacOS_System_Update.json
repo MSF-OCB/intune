@@ -1,0 +1,240 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('15e7df82-f73d-448d-b479-995226a0f092')/settings",
+  "description": "",
+  "name": "OCB_MacOS_System_Update",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-05-24T13:06:02.9245407Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm,appleRemoteManagement",
+  "platforms": "macOS",
+  "lastModifiedDateTime": "2026-05-24T13:06:02.9245407Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "15e7df82-f73d-448d-b479-995226a0f092",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "ddm-latestsoftwareupdate_ddm-latestsoftwareupdate",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "ddm-latestsoftwareupdate_enforcelatestsoftwareupdateversion_0",
+                  "children": [
+                    {
+                      "settingDefinitionId": "ddm-latestsoftwareupdate_delayindays",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": 30,
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    },
+                    {
+                      "settingDefinitionId": "ddm-latestsoftwareupdate_installtime",
+                      "auditRuleInformation": null,
+                      "settingInstanceTemplateReference": null,
+                      "simpleSettingValue": {
+                        "value": "15:00",
+                        "settingValueTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+                      },
+                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                    }
+                  ],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "ddm-latestsoftwareupdate_enforcelatestsoftwareupdateversion",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "softwareupdate_softwareupdate",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "children": [
+              {
+                "choiceSettingValue": {
+                  "value": "softwareupdate_allowstandarduserosupdates_true",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "softwareupdate_allowstandarduserosupdates",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              },
+              {
+                "settingDefinitionId": "softwareupdate_automaticactions",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "choiceSettingValue": {
+                          "value": "softwareupdate_automaticactions_download_1",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "softwareupdate_automaticactions_download",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      },
+                      {
+                        "choiceSettingValue": {
+                          "value": "softwareupdate_automaticactions_installosupdates_1",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "softwareupdate_automaticactions_installosupdates",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      },
+                      {
+                        "choiceSettingValue": {
+                          "value": "softwareupdate_automaticactions_installsecurityupdate_1",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "softwareupdate_automaticactions_installsecurityupdate",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      }
+                    ],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "softwareupdate_rapidsecurityresponse",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "choiceSettingValue": {
+                          "value": "softwareupdate_rapidsecurityresponse_enable_true",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "softwareupdate_rapidsecurityresponse_enable",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      },
+                      {
+                        "choiceSettingValue": {
+                          "value": "softwareupdate_rapidsecurityresponse_enablerollback_false",
+                          "children": [],
+                          "settingValueTemplateReference": null
+                        },
+                        "settingDefinitionId": "softwareupdate_rapidsecurityresponse_enablerollback",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+                      }
+                    ],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+              },
+              {
+                "settingDefinitionId": "softwareupdate_deferrals",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "children": [
+                      {
+                        "settingDefinitionId": "softwareupdate_deferrals_majorperiodindays",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "value": 35,
+                          "settingValueTemplateReference": null,
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                        },
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                      },
+                      {
+                        "settingDefinitionId": "softwareupdate_deferrals_minorperiodindays",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "value": 5,
+                          "settingValueTemplateReference": null,
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                        },
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                      },
+                      {
+                        "settingDefinitionId": "softwareupdate_deferrals_systemperiodindays",
+                        "auditRuleInformation": null,
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "value": 1,
+                          "settingValueTemplateReference": null,
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue"
+                        },
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+                      }
+                    ],
+                    "settingValueTemplateReference": null
+                  }
+                ],
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+              },
+              {
+                "choiceSettingValue": {
+                  "value": "softwareupdate_notifications_true",
+                  "children": [],
+                  "settingValueTemplateReference": null
+                },
+                "settingDefinitionId": "softwareupdate_notifications",
+                "auditRuleInformation": null,
+                "settingInstanceTemplateReference": null,
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+              }
+            ],
+            "settingValueTemplateReference": null
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance"
+      },
+      "id": "1"
+    }
+  ],
+  "settingCount": 2
+}

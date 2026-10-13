@@ -1,0 +1,43 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('3d0b2845-54b6-4dcf-9d76-09e47cfdb9b7')/settings",
+  "description": "",
+  "name": "OCB_Win_ALL_Security_Defender_Exclusions",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2026-02-27T21:20:05.1072626Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "45fea5e9-280d-4da1-9792-fb5736da0ca9_1",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Microsoft Defender Antivirus exclusions"
+  },
+  "creationSource": null,
+  "technologies": "mdm,microsoftSense",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-02-27T21:20:05.1072626Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "3d0b2845-54b6-4dcf-9d76-09e47cfdb9b7",
+  "settings": [
+    {
+      "settingInstance": {
+        "settingDefinitionId": "device_vendor_msft_policy_config_defender_excludedprocesses",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "96b046ed-f138-4250-9ae0-b0772a93d16f"
+        },
+        "simpleSettingCollectionValue": [
+          {
+            "value": "C:\\Program Files\\TeamViewer\\tv_x64.exe",
+            "settingValueTemplateReference": null,
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+          }
+        ],
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

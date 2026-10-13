@@ -1,0 +1,76 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('30a464a2-af21-4f53-808e-9632ff19dcc2')/settings",
+  "description": "Makes sure ALL Intune devices have Defender onboarded",
+  "name": "OCB_Win_ALL_Security_Defender_Onboard",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2024-05-29T23:09:30.2768679Z",
+  "templateReference": {
+    "templateDisplayVersion": "Version 1",
+    "templateId": "0385b795-0f2f-44ac-8602-9f65bf6adede_1",
+    "templateFamily": "endpointSecurityEndpointDetectionAndResponse",
+    "templateDisplayName": "Endpoint detection and response"
+  },
+  "creationSource": null,
+  "technologies": "mdm,microsoftSense",
+  "platforms": "windows10",
+  "lastModifiedDateTime": "2026-04-13T14:59:09.1987146Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "30a464a2-af21-4f53-808e-9632ff19dcc2",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_windowsadvancedthreatprotection_configurationtype_autofromconnector",
+          "children": [
+            {
+              "settingDefinitionId": "device_vendor_msft_windowsadvancedthreatprotection_onboarding_fromconnector",
+              "auditRuleInformation": null,
+              "settingInstanceTemplateReference": null,
+              "simpleSettingValue": {
+                "value": "a4c96e6b-18cf-4fa2-b27e-2c90b2afa526",
+                "settingValueTemplateReference": null,
+                "valueState": "encryptedValueToken",
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSecretSettingValue"
+              },
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+            }
+          ],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "e5c7c98c-c854-4140-836e-bd22db59d651"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_windowsadvancedthreatprotection_configurationtype",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "23ab0ea3-1b12-429a-8ed0-7390cf699160"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "device_vendor_msft_windowsadvancedthreatprotection_configuration_samplesharing_1",
+          "children": [],
+          "settingValueTemplateReference": {
+            "useTemplateDefault": false,
+            "settingValueTemplateId": "f72c326c-7c5b-4224-b890-0b9b54522bd9"
+          }
+        },
+        "settingDefinitionId": "device_vendor_msft_windowsadvancedthreatprotection_configuration_samplesharing",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": {
+          "settingInstanceTemplateId": "6998c81e-2814-4f5e-b492-a6159128a97b"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "1"
+    }
+  ],
+  "settingCount": 2
+}

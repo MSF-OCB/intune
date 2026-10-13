@@ -1,0 +1,39 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('98000ba2-0624-4408-b411-f80563dcc4cb')/settings",
+  "description": "",
+  "name": "OCB_Android_Corp_Managed_Work_Settings_NoOrg",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2025-11-17T22:15:23.277904Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "android",
+  "platforms": "androidEnterprise",
+  "lastModifiedDateTime": "2026-08-13T11:33:01.969736Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "98000ba2-0624-4408-b411-f80563dcc4cb",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility_true",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    }
+  ],
+  "settingCount": 1
+}

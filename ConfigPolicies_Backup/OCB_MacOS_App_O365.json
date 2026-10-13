@@ -1,0 +1,67 @@
+{
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('a3001ef0-74e0-4149-a6ae-ab2dbffc5938')/settings",
+  "description": "",
+  "name": "OCB_MacOS_App_O365",
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "priorityMetaData": null,
+  "createdDateTime": "2024-08-02T10:27:14.0450331Z",
+  "templateReference": {
+    "templateDisplayVersion": null,
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null
+  },
+  "creationSource": null,
+  "technologies": "mdm,appleRemoteManagement",
+  "platforms": "macOS",
+  "lastModifiedDateTime": "2025-05-17T12:52:28.7523738Z",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings())/$entity",
+  "id": "a3001ef0-74e0-4149-a6ae-ab2dbffc5938",
+  "settings": [
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "com.apple.managedclient.preferences_officeautosignin_true",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "com.apple.managedclient.preferences_officeautosignin",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "0"
+    },
+    {
+      "settingInstance": {
+        "settingDefinitionId": "com.apple.managedclient.preferences_officeactivationemailaddress",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "simpleSettingValue": {
+          "value": "{{userprincipalname}}",
+          "settingValueTemplateReference": null,
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue"
+        },
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance"
+      },
+      "id": "1"
+    },
+    {
+      "settingInstance": {
+        "choiceSettingValue": {
+          "value": "com.apple.managedclient.preferences_enablenewoutlook_2",
+          "children": [],
+          "settingValueTemplateReference": null
+        },
+        "settingDefinitionId": "com.apple.managedclient.preferences_enablenewoutlook",
+        "auditRuleInformation": null,
+        "settingInstanceTemplateReference": null,
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance"
+      },
+      "id": "2"
+    }
+  ],
+  "settingCount": 3
+}
