@@ -1,0 +1,22 @@
+{
+  "description": "Windows Naming Services",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2026-01-19T10:29:59.8515921Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "6",
+  "displayName": "OCB_Win_Settings_WNS",
+  "remediationScriptContent": "",
+  "publisher": "Omar Assaf (Admin)",
+  "lastModifiedDateTime": "2026-01-30T14:42:17.3408987Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "2d1660f8-5b44-469e-bd8b-acebcc047ebf",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

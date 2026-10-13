@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-01-17T18:27:57.6446724Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "8",
+  "displayName": "OCB_Win_Security_BitLocker_Key_Escrow",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2026-08-02T13:21:32.2317467Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "46d497c6-d0a2-4293-8197-38f81e5f38da",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

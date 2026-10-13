@@ -1,0 +1,22 @@
+{
+  "description": "collecting windows activation status on devices (for KMS implementation)",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2026-04-15T10:38:23.4520372Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "1",
+  "displayName": "OCB_Win_Activation_Status",
+  "remediationScriptContent": "",
+  "publisher": "Laetitia Brans (Admin)",
+  "lastModifiedDateTime": "2026-04-15T10:38:23.4520372Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "20df3373-8a3b-48fa-ba88-c75cea06bdfc",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

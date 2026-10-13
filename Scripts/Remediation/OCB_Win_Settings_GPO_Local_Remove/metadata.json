@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-03-01T23:29:10.4443818Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "16",
+  "displayName": "OCB_Win_Settings_GPO_Local_Remove",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2026-01-13T19:59:00.1279215Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "2827f90f-3a9e-45cc-92db-2fbf947cf78c",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

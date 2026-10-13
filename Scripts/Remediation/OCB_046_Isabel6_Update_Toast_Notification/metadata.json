@@ -1,0 +1,22 @@
+{
+  "description": "This remediation script checks Isabel 6 version on its security group and notifies the users concerning new release available into Company Portal",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2025-09-19T08:56:54.3551709Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "4",
+  "displayName": "OCB_046_Isabel6_Update_Toast_Notification",
+  "remediationScriptContent": "",
+  "publisher": "Fabrizio Murgia (Admin)",
+  "lastModifiedDateTime": "2025-09-29T09:54:46.8929052Z",
+  "runAsAccount": "user",
+  "enforceSignatureCheck": true,
+  "id": "4114c195-2a53-4677-93a5-1e4e779de741",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

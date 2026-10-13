@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2026-09-10T12:33:55.5393571Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "1",
+  "displayName": "OCB_Win_App_WPS_Office_Removal",
+  "remediationScriptContent": "",
+  "publisher": "Fabrizio Murgia (Admin)",
+  "lastModifiedDateTime": "2026-09-10T12:33:55.5393571Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "0bec6789-5903-4b48-ba85-b9c66add6a53",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

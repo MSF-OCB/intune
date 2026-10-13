@@ -1,0 +1,22 @@
+{
+  "description": "This will chck if proper GLPI project is assigned, and if not it will trigger a remediation scripts that will fix it.",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-06-03T05:53:56.6910546Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "14",
+  "displayName": "OCB_Win_App_GLPI_Agent_Project",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2026-02-25T13:17:43.5742922Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "0e453237-2e4a-4eab-b4b1-cabcf2556f8d",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

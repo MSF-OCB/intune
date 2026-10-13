@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-05-20T16:26:15.6933391Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "1",
+  "displayName": "OCB_Printer_Mapping",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2024-05-20T16:26:15.6933391Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "d0db0de4-1909-44ad-b043-32c5e09069a0",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

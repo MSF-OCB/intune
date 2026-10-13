@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-05-03T18:48:03.7999861Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "7",
+  "displayName": "OCB_Win_Settings_TimeZone_Update_Auto",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2025-08-12T22:55:00.9692599Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "3b5ccc68-db29-4433-98ba-2096b44c33a2",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

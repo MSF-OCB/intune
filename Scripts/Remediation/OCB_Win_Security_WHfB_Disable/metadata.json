@@ -1,0 +1,22 @@
+{
+  "description": "Disable WHfB",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2025-07-02T22:58:30.5373216Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "1",
+  "displayName": "OCB_Win_Security_WHfB_Disable",
+  "remediationScriptContent": "",
+  "publisher": "Omar Assaf (Admin)",
+  "lastModifiedDateTime": "2026-08-21T06:09:56.2202264Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "842d6f04-737a-468d-8deb-b6d60dda7a0a",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

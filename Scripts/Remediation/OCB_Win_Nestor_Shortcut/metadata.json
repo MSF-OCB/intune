@@ -1,0 +1,22 @@
+{
+  "description": "add a shortcut to Nestor on user's desktop",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2025-08-26T14:35:44.7268876Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "5",
+  "displayName": "OCB_Win_Nestor_Shortcut",
+  "remediationScriptContent": "",
+  "publisher": "Laetitia Brans (Admin)",
+  "lastModifiedDateTime": "2026-02-25T13:16:12.9872809Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "aed7bbae-55fe-4414-ad36-a27d0dc7e860",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

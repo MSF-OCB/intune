@@ -1,0 +1,22 @@
+{
+  "description": "## -- JUST FOR TEST -- ##\n<#\n.SYNOPSIS\n    Intune Remediation: Reset IME folders with adaptive cleanup strategy.\n\n.DESCRIPTION\n    - Stops and disables IME service\n    - Kills related processes\n    - Fixes permissions\n    - Attempts deletion with retry logic\n    - Detects locked files\n    - Falls back to reboot-time cleanup if needed\n    - Logs all actions\n#>",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2026-06-04T13:10:08.9484733Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "1",
+  "displayName": "OCB_Win_Settings_Reset_IME_folders",
+  "remediationScriptContent": "",
+  "publisher": "Fabrizio Murgia (Admin)",
+  "lastModifiedDateTime": "2026-06-04T13:11:34.1898336Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "6e6330e5-db6b-4fcb-b9c0-11c94dfda5ed",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

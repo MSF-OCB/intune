@@ -1,0 +1,22 @@
+{
+  "description": "This script remove all Fifefox versions installed on OCB machines",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2025-03-11T15:12:16.2588898Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "5",
+  "displayName": "OCB_Win_App_Mozilla_Firefox_Remove",
+  "remediationScriptContent": "",
+  "publisher": "Fabrizio Murgia (Admin)",
+  "lastModifiedDateTime": "2025-07-13T00:07:21.3804144Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "fe7f9e5f-dac1-4417-9201-506ff6f08dfd",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

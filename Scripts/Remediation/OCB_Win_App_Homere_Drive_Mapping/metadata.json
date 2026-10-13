@@ -1,0 +1,22 @@
+{
+  "description": "Maps Homere drive to an Azure File Share (in Storage Account)",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2026-01-30T14:30:42.3408857Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "25",
+  "displayName": "OCB_Win_App_Homere_Drive_Mapping",
+  "remediationScriptContent": "",
+  "publisher": "Yves de Voghel (Admin)",
+  "lastModifiedDateTime": "2026-08-21T05:38:25.0289752Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "e5ba1147-2e4f-498e-a205-6280443acc61",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

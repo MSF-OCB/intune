@@ -1,0 +1,22 @@
+{
+  "description": "This will download new version of :\nWelcome Pack\nConfig MFA",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-05-08T20:41:02.3657356Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "5",
+  "displayName": "OCB_Win_Files_Desktop_Shared_Documents",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2025-07-12T23:56:31.3887526Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "ce1a0a04-520a-47ba-a2c7-603c8f645bef",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

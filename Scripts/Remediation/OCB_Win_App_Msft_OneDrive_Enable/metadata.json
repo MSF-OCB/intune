@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": true,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-05-08T21:17:00.9023451Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "1",
+  "displayName": "OCB_Win_App_Msft_OneDrive_Enable",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2025-07-13T00:01:59.1804644Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "36fb5fcf-69a8-4e8b-ad02-6cdc9e57eaf4",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

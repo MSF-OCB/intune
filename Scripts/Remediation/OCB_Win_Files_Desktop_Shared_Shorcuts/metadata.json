@@ -1,0 +1,22 @@
+{
+  "description": "This will remove legacy embeded folders in directly user profiles; it will use only the public profile of users",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-03-22T01:09:28.6869214Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "6",
+  "displayName": "OCB_Win_Files_Desktop_Shared_Shorcuts",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2025-07-12T23:54:44.7316799Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "e2f19268-0177-43bd-8f3c-5e116aae80f5",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

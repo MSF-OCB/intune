@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2024-06-29T10:05:56.4997901Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "8",
+  "displayName": "OCB_Win_App_Msft_SCCM_Uninstall",
+  "remediationScriptContent": "",
+  "publisher": "(Admin) Omar Assaf",
+  "lastModifiedDateTime": "2025-07-13T00:00:47.423523Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "54fb6003-2588-4677-a602-4522849a5c6f",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}

@@ -1,0 +1,22 @@
+{
+  "description": "",
+  "runAs32Bit": false,
+  "roleScopeTagIds": [
+    "1"
+  ],
+  "createdDateTime": "2025-08-07T11:38:43.9643417Z",
+  "detectionScriptContent": "",
+  "isGlobalScript": false,
+  "detectionScriptParameters": [],
+  "version": "2",
+  "displayName": "OCB_Win_App_Forti_Client_Register",
+  "remediationScriptContent": "",
+  "publisher": "Omar Assaf (Admin)",
+  "lastModifiedDateTime": "2025-08-07T14:52:32.7091654Z",
+  "runAsAccount": "system",
+  "enforceSignatureCheck": false,
+  "id": "a211fea7-3706-48e8-b30e-0d54cedd6469",
+  "deviceHealthScriptType": "deviceHealthScript",
+  "remediationScriptParameters": [],
+  "highestAvailableVersion": null
+}
