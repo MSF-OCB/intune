@@ -1,0 +1,16 @@
+{
+  "displayName": "OCB_OneDrive_Disable_Sync",
+  "runAsAccount": "system",
+  "lastModifiedDateTime": "2024-05-04T19:29:43.8772948Z",
+  "description": "",
+  "runAs32Bit": true,
+  "enforceSignatureCheck": false,
+  "fileName": "Script_OneDrive_Syn_Disable.ps1",
+  "createdDateTime": "2024-03-22T17:30:00.2148862Z",
+  "id": "f167a6dc-b942-4250-922c-531d5dec1cd9",
+  "scriptContent": "TmV3LUl0ZW0gLVBhdGggIkhLTE06XFNPRlRXQVJFXFBvbGljaWVzXE1pY3Jvc29mdFxXaW5kb3dzIiAtTmFtZSBPbmVEcml2ZSAtRXJyb3JBY3Rpb24gQ29udGludWUNCk5ldy1JdGVtUHJvcGVydHkgLVBhdGggIkhLTE06XFNvZnR3YXJlXFBvbGljaWVzXE1pY3Jvc29mdFxXaW5kb3dzXE9uZURyaXZlIiAtTmFtZSAiRGlzYWJsZUZpbGVTeW5jTkdTQyIgLVZhbHVlICIxIiAtUHJvcGVydHlUeXBlIERXb3JkIC1Gb3JjZQ==",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts/$entity",
+  "roleScopeTagIds": [
+    "1"
+  ]
+}

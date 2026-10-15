@@ -1,0 +1,16 @@
+{
+  "displayName": "OCB_Win_App_Adobe_AI_Off",
+  "runAsAccount": "system",
+  "lastModifiedDateTime": "2026-03-06T03:49:33.2771944Z",
+  "description": "",
+  "runAs32Bit": false,
+  "enforceSignatureCheck": false,
+  "fileName": "Adobe_Reader_AI_Disable.ps1",
+  "createdDateTime": "2024-07-25T16:11:59.688088Z",
+  "id": "9efcd0b6-805d-484b-be7e-d81cbe77b1ab",
+  "scriptContent": "JHJlZ2tleSA9ICJIS0xNOlxTT0ZUV0FSRVxQb2xpY2llc1xBZG9iZVxBZG9iZSBBY3JvYmF0XERDXEZlYXR1cmVMb2NrRG93biIKJG5hbWUgPSAiYkVuYWJsZUdlbnRlY2giCiR2YWx1ZSA9IDAKIAojUmVnaXN0cnkgVGVtcGxhdGUKSWYgKCEoVGVzdC1QYXRoICRyZWdrZXkpKQp7CiAgICBOZXctSXRlbSAtUGF0aCAkcmVna2V5IC1FcnJvckFjdGlvbiBzdG9wCn0KIAppZiAoIShHZXQtSXRlbVByb3BlcnR5IC1QYXRoICRyZWdrZXkgLU5hbWUgJG5hbWUgLUVycm9yQWN0aW9uIFNpbGVudGx5Q29udGludWUpKQp7CiAgICBOZXctSXRlbVByb3BlcnR5IC1QYXRoICRyZWdrZXkgLU5hbWUgJG5hbWUgLVZhbHVlICR2YWx1ZSAtUHJvcGVydHlUeXBlIERXT1JEIC1FcnJvckFjdGlvbiBzdG9wCn0KIApzZXQtSXRlbVByb3BlcnR5IC1QYXRoICRyZWdrZXkgLU5hbWUgJG5hbWUgLVZhbHVlICR2YWx1ZSAtRXJyb3JBY3Rpb24gc3RvcApXcml0ZS1Ib3N0ICJBZG9iZSBBSSBkaXNhYmxlZCIKZXhpdCAw",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts/$entity",
+  "roleScopeTagIds": [
+    "1"
+  ]
+}

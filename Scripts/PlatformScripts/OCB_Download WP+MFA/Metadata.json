@@ -1,0 +1,16 @@
+{
+  "displayName": "OCB_Download WP+MFA",
+  "runAsAccount": "system",
+  "lastModifiedDateTime": "2024-05-06T09:22:05.6684514Z",
+  "description": "Script to download Welcome Pack and MFA guide",
+  "runAs32Bit": true,
+  "enforceSignatureCheck": false,
+  "fileName": "Script_Download WP_MFA.ps1",
+  "createdDateTime": "2024-01-29T19:40:21.6036794Z",
+  "id": "79dca972-cd56-44b1-8a95-6aba64652cd0",
+  "scriptContent": "IyBGZXRjaCBmaWxlcyBmcm9tIEF6dXJlIENETitGcm9udERvb3IgdG8gbG9jYWwgZGlyZWN0b3J5DQokV2ViZmlsZSA9ICJodHRwczovL21zZm9jYnNoYXJlLno2LndlYi5jb3JlLndpbmRvd3MubmV0L2RhdGEvbGlua3MudHh0Ig0KJE5hbWUgPSAiQzpcVGVtcFx1cmxmaWxlcy5jc3YiDQpJbnZva2UtV2ViUmVxdWVzdCAtVVJJICRXZWJmaWxlIC1PdXRGaWxlICROYW1lDQokQ1NWID0gSW1wb3J0LUNzdiAiQzpcVGVtcFx1cmxmaWxlcy5jc3YiIC1EZWxpbWl0ZXIgIiwiDQpGb3JFYWNoICgkcm93IGluICRDU1YpIA0Kew0KJEFkZHJlc3MgPSAkcm93LlVSTA0KJEZvbGRlciA9ICRyb3cuRGVzdGluYXRpb24NCkludm9rZS1XZWJSZXF1ZXN0IC1VcmkgJEFkZHJlc3MgLU91dEZpbGUgJEZvbGRlcg0KfQ0KUmVtb3ZlLUl0ZW0gLVBhdGggIkM6XFRlbXBcdXJsZmlsZXMuY3N2IiAtRm9yY2UgPiAkbnVsbA0KIyMgRW5kIG9mIHB1c2hpbmcgd2ViIGNvbXBvbmVudHM=",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts/$entity",
+  "roleScopeTagIds": [
+    "1"
+  ]
+}

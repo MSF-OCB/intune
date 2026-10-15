@@ -1,0 +1,16 @@
+{
+  "displayName": "OCB_Remove_Shortcuts",
+  "runAsAccount": "system",
+  "lastModifiedDateTime": "2024-03-22T00:46:04.7633644Z",
+  "description": "",
+  "runAs32Bit": true,
+  "enforceSignatureCheck": false,
+  "fileName": "Remediate_Remove_Desktop_Shortcuts.ps1",
+  "createdDateTime": "2023-08-19T20:14:19.1643499Z",
+  "id": "47ccac96-06f7-4968-9e8e-0410a53dcee5",
+  "scriptContent": "IyBHZXQgYWxsIFVzZXJzDQokVXNlcnMgPSBHZXQtQ2hpbGRJdGVtIC1QYXRoICJDOlxVc2VycyIgLUV4Y2x1ZGUgUHVibGljIC1OYW1lDQojIFByb2Nlc3MgYWxsIHRoZSBVc2Vycw0KZm9yZWFjaCAoJFVzZXIgaW4gJFVzZXJzKXsNCiAgICBSZW1vdmUtSXRlbSAtUGF0aCAiQzpcVXNlcnNcJFVzZXJcRGVza3RvcFxNU0YgRG9jdW1lbnRzLmxuayIgLUZvcmNlID4gJG51bGwgLUVycm9yQWN0aW9uIENvbnRpbnVlDQogICAgUmVtb3ZlLUl0ZW0gLVBhdGggIkM6XFVzZXJzXCRVc2VyXERlc2t0b3BcUHJpdmF0ZSBEb2N1bWVudHMubG5rIiAtRm9yY2UgPiAkbnVsbCAtRXJyb3JBY3Rpb24gQ29udGludWUNCiAgICBSZW1vdmUtSXRlbSAtUGF0aCAiQzpcVXNlcnNcJFVzZXJcRGVza3RvcFxJQ1QgV2VsY29tZSBQYWNrLnBkZiIgLUZvcmNlID4gJG51bGwgLUVycm9yQWN0aW9uIENvbnRpbnVlDQogICAgUmVtb3ZlLUl0ZW0gLVBhdGggIkM6XFVzZXJzXCRVc2VyXERlc2t0b3BcSE9XVE8gU2V0dXAgTUZBLnBkZiIgLUZvcmNlID4gJG51bGwgLUVycm9yQWN0aW9uIENvbnRpbnVlDQp9DQpXcml0ZS1PdXRwdXQgIlJlbW92ZSBzaG9ydGN1dHMgZm9yIGRlZmF1bHQgcHJvZmlsZSI=",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts/$entity",
+  "roleScopeTagIds": [
+    "1"
+  ]
+}

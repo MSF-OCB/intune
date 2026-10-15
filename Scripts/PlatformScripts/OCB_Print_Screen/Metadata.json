@@ -1,0 +1,16 @@
+{
+  "displayName": "OCB_Print_Screen",
+  "runAsAccount": "user",
+  "lastModifiedDateTime": "2024-11-04T10:35:25.1345699Z",
+  "description": "These settings are run based on current user registery keys, it includes:\n#01: Enable PrtSc keyboard key for Snipping tool\n#02:",
+  "runAs32Bit": true,
+  "enforceSignatureCheck": false,
+  "fileName": "Enable_PrtSc_SnipTool.ps1",
+  "createdDateTime": "2024-10-09T18:10:32.7044039Z",
+  "id": "247d5030-d33f-4512-b336-bf479dd47d9a",
+  "scriptContent": "IyBUaGlzIGtleSB3aWxsIGVuYWJsZVBydFNjIGtleWJvYXJkIGtleSB0byBydW4gc25pcHBpbmcgdG9vbA0KTmV3LUl0ZW1Qcm9wZXJ0eSAiSEtDVTpcQ29udHJvbCBQYW5lbFxLZXlib2FyZCIgLU5hbWUgIlByaW50U2NyZWVuS2V5Rm9yU25pcHBpbmdFbmFibGVkIiAtUHJvcGVydHlUeXBlIERXb3JkIC1WYWx1ZSAiMSIgLUZvcmNl",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceManagementScripts/$entity",
+  "roleScopeTagIds": [
+    "1"
+  ]
+}
