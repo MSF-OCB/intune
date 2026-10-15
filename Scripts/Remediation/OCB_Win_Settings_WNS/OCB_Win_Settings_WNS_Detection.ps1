@@ -18,34 +18,36 @@
 # Detect if renaming had happened already
 $regPath = 'HKLM:\SOFTWARE\MSFOCB\Intune'
 $MsfRegKeyValue = 'IntuneDeviceRename'
-$MsfRenameVer = '3'
+[int]$MsfRenameVer = '4'
 $RegPathSysNameCurrent = "HKLM:\SYSTEM\CurrentControlSet\Control\Computername\ActiveComputername"
-$RegPathSysNameNew     = "HKLM:\SYSTEM\CurrentControlSet\Control\Computername\Computername"
-$RegKeySysValueName   = "Computername"
-$RegPathTcpipNameNew     = "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters"
-$RegKeyTcpipValueNameCurrent   = "Hostname"
-$RegKeyTcpipValueNameNew       = "NV Hostname"
+$RegPathSysNameNew = "HKLM:\SYSTEM\CurrentControlSet\Control\Computername\Computername"
+$RegKeySysValueName = "Computername"
+$RegPathTcpipNameNew = "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters"
+$RegKeyTcpipValueNameCurrent = "Hostname"
+$RegKeyTcpipValueNameNew = "NV Hostname"
 
 
 # Check if device is Hybrid Joined
 $DomainStatus = Get-CimInstance -ClassName Win32_ComputerSystem -ErrorAction Stop
-If ($DomainStatus.PartOfDomain) {
+if ($DomainStatus.PartOfDomain) {
     Write-Host "Device is Hybrid Joined, Cannot be renamed."
-    Exit 0
+    exit 0
 }
 # Check if device was already renamed
 $OldSysName = $(Get-ItemProperty $RegPathSysNameCurrent -ErrorAction SilentlyContinue).$RegKeySysValueName
 $NewSysName = $(Get-ItemProperty $RegPathSysNameNew -ErrorAction SilentlyContinue).$RegKeySysValueName
-$RenameStatus = (Get-ItemProperty -Path $regPath -ErrorAction SilentlyContinue ).$MsfRegKeyValue
-if ($RenameStatus -eq $MsfRenameVer -and $OldSysName -ne $NewSysName) {
+[int]$RenameStatus = (Get-ItemProperty -Path $regPath -ErrorAction SilentlyContinue ).$MsfRegKeyValue
+if ([int]$RenameStatus -eq [int]$MsfRenameVer -and $OldSysName -ne $NewSysName) {
     # Check if rename is pending restart
     Write-Host "Device is Renamed. Pending restart to change to $NewSysName."
-    Exit 0
-} elseif ($RenameStatus -eq $MsfRenameVer -and $OldSysName -eq $NewSysName) {
+    exit 0
+}
+elseif (([int]$RenameStatus -ge [int]$MsfRenameVer) -and ($OldSysName -eq $NewSysName)) {
     # Confirm rename completed with restart
     Write-Host "Device is already renamed. No further action needed on $NewSysName."
-    Exit 0
-} else {
+    exit 0
+}
+else {
     # Proceed with renaming
     Write-Host "Device renaming process was not triggered yet on $NewSysName."
     exit 1
